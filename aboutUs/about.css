@@ -249,11 +249,12 @@ footer img {
 
 .support {
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
 .support img {
-  height: 14vw;
+  height: 75px;
   width: auto;
 }
 
@@ -294,6 +295,11 @@ footer img {
   .contact {
     gap: 50px;
   }
+
+  .support {
+    flex-direction: row;
+  }
+  
 
   .support img {
     height: 10vw;
