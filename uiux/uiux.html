@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>UI/UX - HIMFEST 2022</title>
+  <link rel="stylesheet" href="uiux.css" />
+  <link rel="stylesheet" href="/font.css">
+  <link rel="stylesheet" href="/universalstyle.css" />
+
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/android-chrome-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/android-chrome-512x512.png" sizes="512x512" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/favicon-32x32.png" sizes="32x32" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="rectangle rectangle-purple rectangle-1"></div>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="px-4 py-4 sm:px-12 lg:px-20 xl:px-28 2xl:px-40">
+    <a href="/homepage/home.html"><img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" /></a>
+    <div class="nav-bar">
+      <a href="/comingSoon.html">TechTalk</a>
+      <div>
+        <div class="dropdown relative">
+          <a class="dropdown-toggle transition duration-150 ease-in-out flex items-center whitespace-nowrap" href=""
+            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Competition
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+              </path>
+            </svg>
+          </a>
+          <ul
+            class="dropdown-menu min-w-max absolute hidden glass text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+            id="dropdown-box" aria-labelledby="dropdownMenuButton2">
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/competition/competition.html">Competition</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/mobile/mobile.html">Mobile Development</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/uiux/uiux.html">UI/UX Design</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="/comingSoon.html">TechExpo</a>
+    </div>
+    <button class="inline-block text-white rounded transition duration-150 ease-in-out" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <i class="bi bi-list menu-icon"></i>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-full h-full"
+      tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="absolute light light-green offcanvas-light"></div>
+      <div class="offcanvas-header flex items-center justify-between p-4">
+        <img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" />
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 36px;">
+          <i class="bi bi-x close-icon"></i>
+        </button>
+      </div>
+
+      <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+        <div class="offcanvas-list">
+          <a href="/techtalk/techtalk.html">TechTalk</a>
+          <a href="/competition/competition.html">Competition</a>
+          <a href="/mobile/mobile.html" class="indent">Mobile Development</a>
+          <a href="/uiux/uiux.html" class="indent">UI/UX Design</a>
+          <a href="/techexpo/techexpo.html">TechExpo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- HERO -->
+  <div id="hero" class="mt-56">
+    <div class="hero-wrapper
+        flex flex-col gap-7
+        mx-4
+        md:flex-row md:justify-start md:items-start md:mx-12 md:my-24
+        lg:mx-20
+        xl:mx-28
+        2xl:mx-40 2xl:my-40">
+
+      <img src="assets/heroImg.svg" alt="" class="hero-img">
+
+      <div class="hero-info flex flex-col gap-7 w-full">
+        <div id="hero-title" class="w-full md:w-full">
+          <p class="text-sm text-center leading-normal md:text-xl md:text-left 2xl:text-2xl">TECH FESTIVAL 2022</p>
+          <h1 class="text-[32px] text-center md:text-4xl md:text-left lg:text-5xl 2xl:text-7xl">UI/UX</h1>
+        </div>
+
+        <p class="hero-desc text-base text-center md:text-sm md:text-left xl:text-lg">Ponam in culpa idiota allis
+          pravitatis. Principium ponere
+          culpam in se justum praeceptum. Neque improperes et</p>
+
+        <div id="timeline-ind" class="mt-8 text-center md:text-left text-2xl font-[Giuconda-Semi-Bold]">OPEN REGISTRATION</div>
+        
+        <div class="countdown w-full flex flex-wrap justify-center items-center gap-5 md:justify-start lg:gap-[32px]">
+
+          <div class="flex flex-col gap-2" id="days">
+            <div class="flex gap-2">
+              <div class="square glass" id="days1"></div>
+              <div class="square glass" id="days2"></div>
+            </div>
+            <div class="label text-center">DAYS</div>
+          </div>
+
+          <div class="flex flex-col gap-2" id="hours">
+            <div class="flex gap-2">
+              <div class="square glass" id="hours1"></div>
+              <div class="square glass" id="hours2"></div>
+            </div>
+            <div class="label text-center">HOURS</div>
+          </div>
+
+          <div class="flex flex-col gap-2" id="minutes">
+            <div class="flex gap-2">
+              <div class="square glass" id="minutes1"></div>
+              <div class="square glass" id="minutes2"></div>
+            </div>
+            <div class="label text-center">MINUTES</div>
+          </div>
+
+          <div class="flex flex-col gap-2" id="seconds">
+            <div class="flex gap-2">
+              <div class="square glass" id="seconds1"></div>
+              <div class="square glass" id="seconds2"></div>
+            </div>
+            <div class="label text-center">SECONDS</div>
+          </div>
+
+        </div>
+
+        <a href="https://www.s.id/formReg-techfest2022" target="_blank" class="glass text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg hover:text-[#ff84b2] transition">
+          <p>Daftar Sekarang</p>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END OF HERO -->
+
+  <!-- PRIZE -->
+  <div id="prize"
+    class="font-[ProgressExtended-Bold] flex justify-between md:justify-evenly text-white mx-4 lg:mx-20 xl:mx-28 2xl:mx-40 mt-32 lg:mt-48 xl:mt-64">
+
+    <img src="/competition/assets/lines.svg" alt="" class="lines lines-1">
+    <img src="/competition/assets/lines.svg" alt="" class="lines lines-2">
+
+    <div class="prize silver flex flex-col justify-center items-center gap-7 text-center">
+      <div class="light light-purple prize-light pl-1"></div>
+      <img src="assets/silver.png" alt="" class="mt-24 mx-auto">
+      <h3 class="md:text-2xl">Rank 2</h3>
+      <p class="md:text-xl xl:text-2xl">Rp. 2.000.000</p>
+    </div>
+    <div class="prize gold flex flex-col justify-center items-center gap-7 text-center">
+      <div class="light light-purple prize-light pl-2"></div>
+      <img src="assets/gold.png" alt="" class="mx-auto">
+      <h3 class="md:text-2xl">Rank 1</h3>
+      <p class="md:text-xl xl:text-2xl">Rp. 3.000.000</p>
+    </div>
+    <div class="prize bronze flex flex-col justify-center items-center gap-7 text-center">
+      <div class="light light-purple prize-light pl-3"></div>
+      <img src="assets/bronze.png" alt="" class="mt-24 mx-auto">
+      <h3 class="md:text-2xl">Rank 3</h3>
+      <p class="md:text-xl xl:text-2xl">Rp. 1.000.000</p>
+    </div>
+  </div>
+  <!-- END OF PRIZE -->
+
+  <!-- SCHEDULE -->
+  <section class="mt-36 sm:mt-72 md:mt-96 xl:mt-[475px] relative font-[Giuconda-Regular]">
+    <div
+      class="light light-purple w-[60vw] h-[60vw] md:w-[50vw] md:h-[50vw] xl:w-[30vw] xl:h-[30vw] mx-auto left-0 right-0"
+    ></div>
+
+    <h2 class="section-title text-center mb-10">Timeline</h2>
+
+    <div
+      class="relative grid grid-cols-2 gap-2 lg:flex lg:justify-evenly lg:gap-0 text-white"
+    >
+      <div
+        class="hide-responsive absolute top-[40%] lg:top-[43%] h-1 w-11/12 -translate-y-1/2 transform rounded-md bg-white opacity-50 hidden"
+      ></div>
+
+      <a
+        class="text-center pencetan only:relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          25 Okt 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Open Registration <br />
+          <span class="text-xs"></span>
+        </p>
+      </a>
+
+      <a
+        class="text-center pencetan relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          17 Nov 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Technical Meeting <br />
+          <span class="text-xs"></span>
+        </p>
+      </a>
+
+      <a
+        class="text-center pencetan relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          26 Nov 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Close Registration <br />
+          <span class="text-xs"></span>
+        </p>
+      </a>
+
+      <a
+        class="text-center pencetan relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          8 Dec 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Finalist Announcement <br />
+          <span class="text-xs"></span>
+        </p>
+      </a>
+
+      <a
+        class="text-center pencetan relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          11 Dec 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Final Presentation <br />
+          <span class="text-xs"></span>
+        </p>
+      </a>
+
+      <a
+        class="text-center pencetan relative z-10 flex h-52 flex-col items-center justify-evenly rounded-lg border-[1.5px] lg:w-52 border-transparent bg-transparent"
+      >
+        <p class="mx-2 text-center text-sm font-bold lg:text-xl">
+          17 Dec 2022
+        </p>
+        <div
+          class="my-2 h-4 w-4 rounded-full border-[1.5px] border-card bg-white"
+        ></div>
+        <p
+          class="text-sm lg:text-xl font-bold uppercase tracking-[0.15em] opacity-80"
+        >
+          Awarding Day <br />
+          <span class="text-xs opacity-0">EVENT</span>
+        </p>
+      </a>
+    </div>
+  </section>
+  <!-- END OF SCHEDULE -->
+
+  <!-- OVERVIEW -->
+  <div
+      class="overview w-fit bg-cover gui-regular px-5 sm:px-28 pb-48 pt-56 lg:pb-72 lg:pt-96 text-white overflow-hidden mt-32 lg:mt-48 ">
+      <div class="relative z-20 flex flex-col gap-y-28 lg:gap-y-56">
+        <div
+          class="relative flex items-center justify-center md:justify-start xl:mx-20"
+        >
+          <div
+            class="glass glass-border pt-80 sm:pt-96 p-8 sm:p-10 md:pt-10 md:mr-36 lg:mr-44 md:pr-40 lg:pr-52 flex flex-col gap-5 text-center md:text-left"
+          >
+            <h2 class="giu-semi-bold text-4xl font-bold">
+              Benefits
+            </h2>
+            <p class="md:text-lg lg:text-xl">
+              Ponam in culpa idiota allis pravitatis. Principium ponere culpam
+              in se justum praeceptum. Neque improperes et allis qui non
+              perfecte ipse docuit.
+              <br />
+              Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et
+              Technologiae apud Massachusetts instituta Opera collectio.
+            </p>
+          </div>
+          <div
+            class="select-none absolute top-4 sm:top-8 mr-2 md:mr-0 md:top-auto md:right-[-45px] grid place-items-center"
+          >
+            <img
+              src="assets/benefits.png"
+              class="w-72 sm:w-80 md:w-[350px] lg:w-[425px]"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-center md:justify-start xl:mx-20"
+        >
+          <div
+            class="glass glass-border pt-80 sm:pt-96 p-8 sm:p-10 md:pt-10 md:ml-36 lg:ml-44 md:pl-40 lg:pl-52 flex flex-col gap-5 text-center md:text-right"
+          >
+            <h2 class="giu-semi-bold text-4xl font-bold">Fee</h2>
+            <p class="md:text-lg lg:text-xl">
+              Ponam in culpa idiota allis pravitatis. Principium ponere culpam
+              in se justum praeceptum. Neque improperes et allis qui non
+              perfecte ipse docuit.
+              <br />
+              Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et
+              Technologiae apud Massachusetts instituta Opera collectio.
+            </p>
+          </div>
+          <div
+            class="select-none absolute top-4 sm:top-8 mr-2 md:mr-0 md:top-auto md:left-[-45px] grid place-items-center"
+          >
+            <img
+              src="assets/fee.png"
+              class="w-72 sm:w-80 md:w-[350px] lg:w-[425px]"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="relative flex items-center justify-center md:justify-start xl:mx-20"
+        >
+          <div
+            class="glass glass-border pt-80 sm:pt-96 p-8 sm:p-10 md:pt-10 md:mr-36 lg:mr-44 md:pr-40 lg:pr-52 flex flex-col gap-5 text-center md:text-left"
+          >
+            <h2 class="giu-semi-bold text-4xl font-bold">Guidebook</h2>
+            <p class="md:text-lg lg:text-xl">
+              Ponam in culpa idiota allis pravitatis. Principium ponere culpam
+              in se justum praeceptum. Neque improperes et allis qui non
+              perfecte ipse docuit.
+              <br />
+              Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et
+              Technologiae apud Massachusetts instituta Opera collectio.
+            </p>
+
+            <a href="https://www.s.id/guidebook-techfest2022" target="_blank" class="glass px-4 py-2 rounded-xl border-[1px] border-white text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg hover:text-[#ff84b2] hover:border-[#ff84b2] transition">
+              <p>Unduh Guidebook</p>
+              <i class="bi bi-book"></i>
+            </a>
+          </div>
+          <div
+            class="select-none absolute top-4 sm:top-8 mr-2 md:mr-0 md:top-auto md:right-[-45px] grid place-items-center"
+          >
+            <img
+              src="assets/guidebook.png"
+              class="w-72 sm:w-80 md:w-[350px] lg:w-[425px]"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END OF OVERVIEW -->
+
+  <!-- FOOTER -->
+  <footer class="py-[50px] px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
+    <div class="content">
+      <div class="content-top">
+        <div class="footer-logo">
+          <a href="/homepage/home.html"><img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" /></a>
+        </div>
+        <div class="footer-nav">
+          <a href="/comingSoon.html" class="underline-anim">TechTalk</a>
+          <a href="/aboutUs/about.html" class="underline-anim">About</a>
+          <a href="/competition/competition.html" class="underline-anim">Competition</a>
+          <a href="https://www.s.id/formReg-techfest2022" target="_blank" class="underline-anim">Register</a>
+          <a href="/comingSoon.html" class="underline-anim">TechExpo</a>
+          <a href="/homepage/home.html#faq" class="underline-anim">FAQ</a>
+        </div>
+      </div>
+      <div class="content-bottom">
+        &copy; 2022 TECHFEST | TECHFEST is an event created by HIMTI BINUS
+        UNIVERSITY
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="contact">
+        <a href="" class="contact-platform flex justify-center items-center"
+          ><i class="bi bi-line text-white text-2xl hover:text-[#ff84b2] transition"></i></a>
+        <a href="" class="contact-platform flex justify-center items-center"
+          ><i class="bi bi-whatsapp text-white text-2xl hover:text-[#ff84b2] transition"></i></a></a>
+        <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center"
+          ><i class="bi bi-instagram text-white text-2xl hover:text-[#ff84b2] transition"></i></a></a>
+      </div>
+      <div class="support">
+        <img src="/homepage/assets/logoHimti.png" alt="" />
+        <img src="/homepage/assets/logoBinus.png" alt="" />
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+
+  <script src="uiux.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <!--  JQuery CDN  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+  <!-- JQuery UI CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>

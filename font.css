@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Progress";
+  src: url("/fonts/Progress.woff2") format("woff2"),
+    url("./fonts/Progress.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProgressExtended-Bold";
+  src: url("/fonts/ProgressExtended-Bold.woff2") format("woff2"),
+    url("/fonts/ProgressExtended-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Giuconda-Thin";
+  src: url("/fonts/Giuconda\ Thin.woff2") format("woff2"),
+    url("/fonts/Giuconda\ Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Giuconda-Regular";
+  src: url("/fonts/Giuconda\ Regular.woff2") format("woff2"),
+    url("/fonts/Giuconda\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Giuconda-Semi-Bold";
+  src: url("/fonts/Giuconda\ Semi\ Bold.woff2") format("woff2"),
+    url("/fonts/Giuconda\ Semi\ Bold.ttf.ttf") format("truetype");
+}

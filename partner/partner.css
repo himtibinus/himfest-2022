@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #022f46;
+}
+
+/* NAVBAR */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  /* margin: 0 105px; */
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* border-bottom: 0.5px solid white; */
+  font-family: "Giuconda-Thin";
+  transition: all 0.3s ease;
+}
+
+nav img {
+  width: 25vw;
+}
+
+.nav-bar {
+  display: none;
+}
+
+nav {
+  font-size: 26px;
+}
+
+nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: white !important;
+}
+
+.offcanvas {
+  background-color: #022f46 !important;
+}
+
+.offcanvas-list {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.indent {
+  margin-left: 30px;
+}
+
+.offcanvas-light {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 640px) {
+  nav img {
+    width: 18vw;
+  }
+
+  .offcanvas {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav img {
+    width: 16vw;
+  }
+
+  nav button,
+  .offcanvas {
+    display: none !important;
+  }
+
+  .nav-bar {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .nav-bar a {
+    position: relative;
+    text-decoration: none;
+    transition: 0.125s all ease-in-out;
+  }
+
+  .nav-bar a:hover {
+    color: #ff84b2;
+    transition: 0.125s all ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav img {
+    width: 12vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  nav img {
+    width: 10vw;
+  }
+}
+
+/* END OF NAVBAR */
+
+/* PARTNER DESC */
+/* END OF PARTNER DESC */
+
+/* OVERVIEW */
+
+.progress {
+  font-family: "Progress";
+}
+
+.progress-bold {
+  font-family: "ProgressExtended-Bold";
+}
+
+.giu-thin {
+  font-family: Giuconda-Thin;
+}
+
+.giu-regular {
+  font-family: Giuconda-Regular;
+}
+
+.giu-semi-bold {
+  font-family: Giuconda-Semi-Bold;
+}
+
+.glass-border {
+  border-radius: 16px;
+  border: solid rgba(255, 255, 255, 0.5) 1.5px;
+}
+
+/* END OF OVERVIEW */
+
+/* GALLERY */
+/* END OF GALLERY */
+
+/* OUR TEAM */
+.partner1-team-leader-bg {
+  background: linear-gradient(180deg, #097b6a 0%, #022d46 100%);
+  transform: rotate(142.1deg);
+}
+.partner1-team-member-bg {
+  background: linear-gradient(180deg, #097b6a 0%, #022d46 100%);
+  transform: rotate(142.1deg);
+}
+/* END OF OUR TEAM */
+
+/* CONTACT */
+.partner1-contact-container {
+  background: linear-gradient(
+    231.4deg,
+    #097b6a -0.13%,
+    #022d46 56.18%,
+    #097969 120.16%
+  );
+}
+.partner1-glass-ball {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.14));
+  -webkit-backdrop-filter: blur(21px);
+}
+/* END OF CONTACT */
