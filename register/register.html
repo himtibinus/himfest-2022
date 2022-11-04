@@ -182,7 +182,7 @@
                 <option value="mobile">Mobile Development</option>
               </optgroup>
             </select>
-            <p id="error-event" class="error-tag text-lg text-red-400"></p>
+            <p id="error-event" class="error-tag min-h-[32px]"></p>
           </div>
 
           <div class="form-group">
@@ -194,7 +194,7 @@
               placeholder="Nama Tim"
               required
             />
-            <p id="error-team" class="error-tag text-lg text-red-400"></p>
+            <p id="error-team" class="error-tag min-h-[32px]"></p>
           </div>
 
           <div class="form-group">
@@ -206,7 +206,7 @@
               placeholder="example@mail.com"
               required
             />
-            <p id="error-email" class="error-tag text-lgv text-red-400"></p>
+            <p id="error-email" class="error-tag min-h-[32px]"></p>
           </div>
           
           <div class="form-group">
@@ -218,7 +218,7 @@
               placeholder="Nama Universitas"
               required
             />
-            <p id="error-universitas" class="error-tag text-lg text-red-400"></p>
+            <p id="error-universitas" class="error-tag min-h-[32px]"></p>
           </div>
           
 
@@ -232,23 +232,21 @@
                 placeholder="Anggota 1"
                 required
               />
-              <p id="error-anggota1" class="error-tag text-lg text-red-400"></p>
+              <p id="error-anggota1" class="error-tag min-h-[32px]"></p>
               <input
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="anggota2"
                 placeholder="Anggota 2"
-                required
               />
-              <p id="error-anggota2" class="error-tag text-lg text-red-400"></p>
+              <p id="error-anggota2" class="error-tag min-h-[32px]"></p>
               <input
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="anggota3"
                 placeholder="Anggota 3"
-                required
               />
-              <p id="error-anggota3" class="error-tag text-xl text-red-400"></p>
+              <p id="error-anggota3" class="error-tag min-h-[32px]"></p>
             </div>
             <div class="nim w-full flex flex-col gap-5">
               <p>NIM</p>
@@ -259,7 +257,7 @@
                 placeholder="NIM Anggota 1"
                 required
               />
-              <p id="error-nim1" class="error-tag text-lg text-red-400"></p>
+              <p id="error-nim1" class="error-tag min-h-[32px]"></p>
               <input
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
@@ -267,7 +265,7 @@
                 placeholder="NIM Anggota 2"
                 required
               />
-              <p id="error-nim2" class="error-tag text-lg text-red-400"></p>
+              <p id="error-nim2" class="error-tag min-h-[32px]"></p>
               <input
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
@@ -275,7 +273,7 @@
                 placeholder="NIM Anggota 3"
                 required
               />
-              <p id="error-nim3" class="error-tag text-lg text-red-400"></p>
+              <p id="error-nim3" class="error-tag min-h-[32px]"></p>
             </div>
           </div>
 
@@ -289,7 +287,7 @@
                 placeholder="ID LINE Ketua"
                 required
               />
-              <p id="error-line" class="error-tag text-lg text-red-400"></p>
+              <p id="error-line" class="error-tag min-h-[32px]"></p>
             </div>
             <div class="nim w-full flex flex-col gap-5">
               <p>No. WA (Ketua)</p>
@@ -300,7 +298,7 @@
                 placeholder="No. WA Ketua"
                 required
               />
-              <p id="error-wa" class="error-tag text-lg text-red-400"></p>
+              <p id="error-wa" class="error-tag min-h-[32px]"></p>
             </div>
           </div>
 
@@ -320,23 +318,26 @@
               placeholder="Link"
               required
             />
-            <p id="error-link" class="error-tag text-lg text-red-400"></p>
+            <p id="error-link" class="error-tag min-h-[32px]"></p>
           </div>
 
           <div class="payment self-start">
-            <h3>Pembayaran</h3>
-            <p>
-              (No. Rekening BCA 3160265450 a.n. <em>Hanley Yunanda Saputra</em>)<br />Isi
-              dalam Folder Drive
-            </p>
+            <h3>Tata cara pembayaran</h3>
+            <ol>
+              <li>Lakukan registrasi melalui website resmi TECHFEST 2022</li>
+              <li>Kirim biaya pendaftaran melalui rekening dengan menambahkan kode unik.<br><em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em></li>
+              <li>Pastikan nominal telah menggunakan <em>kode unik (003)</em><br>(Contoh: Rp75.003)</li>
+              <li>Unggah bukti pembayaran pada <em>Google Drive</em> untuk melakukan validasi bahwa Anda telah melakukan pembayaran</li>
+              <li>Panitia akan melakukan validasi dan memberikan konfirmasi bahwa pendaftaran telah berhasil melalui email paling lambat 2x24 jam.</li>
+            </ol>
+          </div>
+
+          <div class="payment self-start">
+            <h3>Dokumen dalam folder Google drive</h3>
             <ul>
-              <li>
-                KTM masing-masing anggota dengan format
-                <em>Nama KTM - Nama Lengkap - NIM</em>
-              </li>
-              <li>
-                Bukti transfer dengan format <em>Bukti Transfer - Nama Tim</em>
-              </li>
+              <li><em>Scan KTM</em> masing-masing anggota. [ Format nama file: <em>KTM - NamaLengkap</em> ]</li>
+              <li><em>Bukti transfer</em> kepada rekening <em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em> sebesar Rp75.003,00 [ Format nama file: <em>BuktiTransfer - NamaTim</em> ]</li>
+              <li><em>Bukti post twibbon</em> dan poster masing-masing anggota [ Format nama file: <em>BuktiTwibbon - NamaAnggota</em> ]</li>
             </ul>
           </div>
 
@@ -349,7 +350,7 @@
               placeholder="Nama Pembayar"
               required
             />
-            <p id="error-sender" class="error-tag text-lg text-red-400"></p>
+            <p id="error-sender" class="error-tag min-h-[32px]"></p>
           </div>
 
           <div class="cp w-full flex flex-col gap-5">
@@ -396,13 +397,13 @@
                 >I have double checked all information I have given.</label
               >
             </div>
-            <p id="unchecked-box" class="error-tag text-lg text-red-400 self-start"></p>
+            <p id="unchecked-box" class="error-tag min-h-[32px] self-start"></p>
           </div>
         </form>
 
         <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
           <button class="glass py-4 px-28 rounded-[16px]
-          hover:border-[#ff84b2] hover:text-[#ff84b2] transition" id="submit-btn">SUBMIT</button>
+          hover:border-[#ff84b2] hover:text-[#ff84b2] transition" type="submit" id="submit-btn">SUBMIT</button>
         </div>
       </div>
     </div>
@@ -421,7 +422,7 @@
             <a href="/comingSoon.html" class="underline-anim">TechTalk</a>
             <a href="/aboutUs/about.html" class="underline-anim">About</a>
             <a href="/competition/competition.html" class="underline-anim">Competition</a>
-            <a href="/register/register.html" target="_blank" class="underline-anim">Register</a>
+            <a href="#"  class="underline-anim">Register</a>
             <a href="/comingSoon.html" class="underline-anim">TechExpo</a>
             <a href="/index.html#faq" class="underline-anim">FAQ</a>
           </div>
@@ -442,7 +443,7 @@
             ><i 
             class="bi bi-whatsapp text-white text-lg hover:text-[#ff84b2] transition pt-2
             md:text-xl xl:text-2xl"></i></a></a>
-          <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center"
+          <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center" target="_blank"
             ><i 
             class="bi bi-instagram text-white text-lg hover:text-[#ff84b2] transition pt-2
             md:text-xl xl:text-2xl"></i></a></a>

@@ -13,26 +13,10 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-// function calcPrice() {
-//   let totalPrice = document.getElementById('total-price');
-//   if(data.team_name && data.leader_name && data.member1_name && data.member2_name){
-//     totalPrice.innerHTML = 'Rp75.000,00';
-//   }
-// }
-
-// const 
-
-// data.team_name.addEventListener('change', () => {
-//   let totalPrice = document.getElementById('total-price');
-//   if(data.team_name && data.leader_name && data.member1_name && data.member2_name){
-//     totalPrice.innerHTML = 'Rp75.000,00';
-//   }
-// });
-
 const validate = (data, checkbox) => {
   let flag = true;
   let errorTags = document.getElementsByClassName('error-tag');
-  
+
   for (const tag of errorTags) {
     tag.innerHTML = ""
   }
@@ -64,22 +48,6 @@ const validate = (data, checkbox) => {
     document.getElementById('error-anggota1').innerHTML = "Required";
     flag=false;
   }
-  if(!data.member1_nim){
-    document.getElementById('error-nim2').innerHTML = "Required";
-    flag=false;
-  }
-  if(!data.member1_name){
-    document.getElementById('error-anggota2').innerHTML = "Required";
-    flag=false;
-  }
-  if(!data.member2_nim){
-    document.getElementById('error-nim3').innerHTML = "Required";
-    flag=false;
-  }
-  if(!data.member2_name){
-    document.getElementById('error-anggota3').innerHTML = "Required";
-    flag=false;
-  }
   if(!data.university){
     document.getElementById('error-universitas').innerHTML = "Required";
     flag=false;
@@ -101,52 +69,73 @@ const validate = (data, checkbox) => {
     flag=false;
   }
   
-  if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.email_address))){
+  if(data.email_address!="" & !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(data.email_address))){
     document.getElementById('error-email').innerHTML = "Invalid Email";
     flag=false;
   }
 
-  if(!(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(data.url))){
+  if(data.url!="" & !(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(data.url))){
     document.getElementById('error-link').innerHTML = "Invalid URL";
     flag=false;
   }
 
-  if(!(String(data.leader_name).match('^[a-zA-Z]+$'))){
+  if(data.leader_name!="" & !(String(data.leader_name).match('^[a-zA-Z ]+$'))){
     document.getElementById('error-anggota1').innerHTML = "Must be alphabetical";
     flag=false;
   }
-  if(!(String(data.member1_name).match('^[a-zA-Z]+$'))){
+  if(data.member1_name!="" & !(String(data.member1_name).match('^[a-zA-Z ]+$'))){
     document.getElementById('error-anggota2').innerHTML = "Must be alphabetical";
     flag=false;
   }
-  if(!(String(data.member2_name).match('^[a-zA-Z]+$'))){
+  if(data.member2_name!="" & !(String(data.member2_name).match('^[a-zA-Z ]+$'))){
     document.getElementById('error-anggota3').innerHTML = "Must be alphabetical";
     flag=false;
   }
-  if(!(String(data.university).match('^[a-zA-Z]+$'))){
+  if(data.university!="" & !(String(data.university).match('^[a-zA-Z ]+$'))){
     document.getElementById('error-universitas').innerHTML = "Must be alphabetical";
     flag=false;
   }
-  if(!(String(data.payer_name).match('^[a-zA-Z]+$'))){
+  if(data.payer_name!="" & !(String(data.payer_name).match('^[a-zA-Z ]+$'))){
     document.getElementById('error-sender').innerHTML = "Must be alphabetical";
     flag=false;
   }
 
-  if(!(String(data.leader_nim).match('^[0-9]+$'))){
-    document.getElementById('error-nim1').innerHTML = "Must be numerical";
+  if(data.leader_nim!="" & !(String(data.leader_nim).match('^[0-9]+$'))){
+    if(/\s/.text(String(data.leader_nim))){
+      document.getElementById('error-nim1').innerHTML = "No whitespace allowed";
+    }
+    else{
+      document.getElementById('error-nim1').innerHTML = "Must be numerical";
+    } 
     flag=false;
   }
-  if(!(String(data.member1_nim).match('^[0-9]+$'))){
-    document.getElementById('error-nim2').innerHTML = "Must be numerical";
+  if(data.member1_nim!="" & !(String(data.member1_nim).match('^[0-9]+$'))){
+    if(/\s/.text(String(data.member1_nim))){
+      document.getElementById('error-nim2').innerHTML = "No whitespace allowed";
+    }
+    else{
+      document.getElementById('error-nim2').innerHTML = "Must be numerical";
+    }
     flag=false;
   }
-  if(!(String(data.member2_nim).match('^[0-9]+$'))){
-    document.getElementById('error-nim3').innerHTML = "Must be numerical";
+  if(data.member2_nim!="" & !(String(data.member2_nim).match('^[0-9]+$'))){
+    if(/\s/.text(String(data.member2_nim))){
+      document.getElementById('error-nim3').innerHTML = "No whitespace allowed";
+    }
+    else{
+      document.getElementById('error-nim3').innerHTML = "Must be numerical & no whitespace";
+    }
+    
     flag=false;
   }
 
-  if(!(String(data.whatsapp_number).match('^[0-9]+$'))) {
-    document.getElementById('error-wa').innerHTML = 'Must be number';
+  if(/\s/.test(data.line_id)){
+    document.getElementById('error-line').innerHTML = 'No whitespace allowed';
+    flag=false;
+  }
+
+  if(data.whatsapp_number!="" & (!((String(data.whatsapp_number).startsWith('0')) | (String(data.whatsapp_number).startsWith('+62')))))   {
+    document.getElementById('error-wa').innerHTML = 'Invalid phone number format';
     flag=false;
   }
   else if (!(String(data.whatsapp_number).length >= 10 & String(data.whatsapp_number).length <= 14)){
@@ -198,6 +187,8 @@ btn.addEventListener('click', () => {
     data.event_id = 4;
   }
 
+  console.log(JSON.stringify(data));
+
   if(validate(data, formData.get('doublecheck'))){
     fetch('https://api.techfest.himtibinus.or.id/api/register', {
       method: 'POST',
@@ -208,8 +199,10 @@ btn.addEventListener('click', () => {
     }).then(function(response) {
         return response.json();
     }).then(function(data) {
+        console.log(data);
         if(data.message === 'Success'){
-          alert('Registered successfully!');
+          alert(
+            "Terima kasih sudah menyelesaikan registrasi competition TECHFEST 2022! \nPanita akan melakukan validasi berdasarkan data yang kamu kirimkan, dan informasi selanjutnya akan kami kirim melalui e-mail. So, pastikan lagi email kamu valid ya!");
           window.location.reload();
         }
     });
