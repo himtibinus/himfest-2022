@@ -7,7 +7,6 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 body {
@@ -158,11 +157,10 @@ nav button {
 }
 
 .light-1 {
-  top: 0px;
-  right: 0px;
+  top: 200px;
+  right: 125px;
   width: 200px;
-  height: 400px;
-  border-radius: 350px 0 0 350px;
+  height: 200px;
 }
 
 #hero {
@@ -362,14 +360,14 @@ nav button {
 /* EXHIBITION PARTNERS */
 
 .exhibitrec-1 {
-  width: 60%;
+  width: 50% !important;
   margin-top: -60vw;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
 .exhibitrec-2 {
-  width: 60%;
+  width: 50% !important;
   margin-top: 60vw;
 }
 
@@ -390,12 +388,12 @@ nav button {
 
 @media only screen and (min-width: 480px) {
   .exhibitrec-1 {
-    width: 200px;
+    width: 250px !important;
     margin-top: -30vw;
   }
 
   .exhibitrec-2 {
-    width: 200px;
+    width: 250px !important;
     margin-top: 25vw;
   }
 }
@@ -410,11 +408,11 @@ nav button {
 
 @media only screen and (min-width: 1280px) {
   .exhibitrec-1 {
-    width: 400px;
+    width: 400px !important;
   }
 
   .exhibitrec-2 {
-    width: 400px;
+    width: 400px !important;
     margin-top: 300px;
   }
 
@@ -439,6 +437,12 @@ nav button {
   width: 57.5vw;
 }
 
+.benefit-line {
+  z-index: -1;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 @media only screen and (min-width: 480px) {
   #benefits img {
     width: 50vw;
@@ -460,6 +464,29 @@ nav button {
 /* END OF BENEFITS */
 
 /* SPONSOR */
+.container-coloring {
+  background: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 6.56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.08));
+  backdrop-filter: blur(21px);
+
+  border-radius: 16px;
+  border: 1px solid white;
+}
+
+.img-sponsor img {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 1020px) {
+  .logo-margin {
+    margin-bottom: 3vw;
+  }
+}
 /* END OF SPONSOR */
 
 /* ABOUT */
@@ -566,7 +593,7 @@ nav button {
   }
 
   .akar-r {
-    top: 40vw;
+    top: 30vw;
     right: -40vw;
     width: 300vw;
   }

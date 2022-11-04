@@ -5,6 +5,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -150,11 +151,10 @@ nav button {
 }
 
 .light-1 {
-  top: 0px;
-  right: 0px;
+  top: 200px;
+  right: 125px;
   width: 200px;
-  height: 400px;
-  border-radius: 350px 0 0 350px;
+  height: 200px;
 }
 
 #hero {
@@ -350,31 +350,64 @@ nav button {
   transition: all 0.5s ease-in-out;
 }
 
+.speaker-rect {
+  z-index: -1;
+}
+
+.speaker-line {
+  z-index: -1;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 /* END OF SPEAKERS */
 
 /* SPONSOR */
+.container-coloring {
+  background: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 6.56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.08));
+  backdrop-filter: blur(21px);
+
+  border-radius: 16px;
+  border: 1px solid white;
+}
+
+.img-sponsor img {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 1020px) {
+  .logo-margin {
+    margin-bottom: 3vw;
+  }
+}
 /* END OF SPONSOR */
 
 /* ABOUT */
 
-#techtalk-about {
+#about {
   position: relative;
   color: white;
   font-family: "Giuconda-Regular";
 }
 
-.techtalk-about-info {
+.about-info {
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto !important;
 }
 
-.techtalk-join {
+.join {
   font-family: "ProgressExtended-Bold";
 }
 
-.techtalk-about-btn {
+.about-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,24 +418,24 @@ nav button {
   border-radius: 5px;
 }
 
-.techtalk-about-btn i {
+.about-btn i {
   display: none;
 }
 
-.techtalk-ball {
+.ball {
   z-index: -2;
   position: absolute;
   transition: all 0.3s ease;
 }
 
-.techtalk-ball-1 {
+.ball-1 {
   top: -20vw;
   width: 40vw;
   -webkit-filter: blur(10px) !important;
   filter: blur(10px) !important;
 }
 
-.techtalk-ball-2 {
+.ball-2 {
   top: 20vw;
   right: -5vw;
   width: 60vw;
@@ -410,16 +443,16 @@ nav button {
   filter: blur(10px) !important;
 }
 
-.techtalk-akar-l {
+.akar-l {
   top: -10vw;
   left: -40vw;
-  width: 250vw;
+  width: 200vw;
   position: absolute;
   z-index: -3;
 }
 
-.techtalk-akar-r {
-  bottom: 0vw;
+.akar-r {
+  top: 50vw;
   right: -30vw;
   width: 350vw;
   position: absolute;
@@ -428,70 +461,49 @@ nav button {
   transform: scaleX(-1);
 }
 
-.techtalk-about-rectangle {
-  bottom: -40vw;
-  left: -25%;
+.about-rectangle {
+  bottom: 275px;
   z-index: -4 !important;
-  width: 130%;
+  width: 100%;
   height: calc(50vw);
-  /*border-radius: calc(7vw * 0.9);*/
+  border-radius: calc(7vw * 0.9);
   transform: rotate(180deg);
   -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
-.techtalk-rec {
-  bottom: -28vw;
-  right: 0vw;
-  width: 45vw;
-  position: absolute;
-  z-index: -4;
-}
-
 @media only screen and (min-width: 480px) {
-  #techtalk-about {
-    margin-top: 300px !important;
-  }
-
-  .techtalk-ball-1 {
+  .ball-1 {
     top: -20vw;
     width: 30vw;
   }
 
-  .techtalk-ball-2 {
+  .ball-2 {
     top: 15vw;
-    right: 0vw;
-    width: 45vw;
+    right: -5vw;
+    width: 50vw;
   }
 
-  .techtalk-akar-l {
-    top: -50vw;
-    left: -48vw;
+  .akar-l {
+    top: -20vw;
+    left: -50vw;
     width: 150vw;
   }
 
-  .techtalk-akar-r {
-    bottom: -5vw;
-    right: 0vw !important;
-    width: 65vw;
+  .akar-r {
+    top: 25vw;
+    right: -40vw;
+    width: 300vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  #techtalk-about {
-    margin-top: 300px !important;
-  }
-
-  .techtalk-about-rectangle {
-    border-radius: calc(7vw * 0.9);
-  }
-
-  .techtalk-ball-1 {
+  .ball-1 {
     top: -20vw;
     width: 30vw;
   }
 
-  .techtalk-ball-2 {
+  .ball-2 {
     top: 5vw;
     right: -5vw;
     width: 40vw;
@@ -499,33 +511,27 @@ nav button {
     filter: none !important;
   }
 
-  .techtalk-akar-l {
-    top: -35vw;
+  .akar-l {
+    top: -10vw;
     left: -60vw;
-    width: 250vw !important;
+    width: 120vw !important;
   }
 
-  .techtalk-akar-r {
-    bottom: -40vw !important;
-    right: 0vw;
-    width: 80vw !important;
+  .akar-r {
+    top: 30vw;
+    right: -60vw;
+    width: 120vw;
   }
 
-  .techtalk-rec {
-    bottom: -40vw !important;
-    right: 0vw;
-    width: 40vw !important;
-  }
-  /*
   .about-rectangle {
-    left: 50vw;
-    bottom: -25vw !important;
+    right: -100px;
+    bottom: 250px;
     width: calc(45vw * 1.2);
     height: calc(50vw * 0.9);
     transform: rotate(-38deg);
   }
-  */
-  .techtalk-about-info {
+
+  .about-info {
     text-align: left;
     justify-content: flex-start;
     align-items: flex-start;
@@ -534,66 +540,52 @@ nav button {
 }
 
 @media only screen and (min-width: 1024px) {
-  #techtalk-about {
-    margin-top: 350px; /*sementara*/
-  }
-
-  .techtalk-ball-1 {
+  .ball-1 {
     top: -20vw;
-    left: -2vw;
     width: 20vw;
   }
 
-  .techtalk-ball-2 {
+  .ball-2 {
     top: -5vw;
-    right: 8vw;
-    width: 38vw;
+    right: 10vw;
+    width: 35vw;
   }
 
-  .techtalk-akar-l {
-    top: -30vw;
-    left: -38vw;
+  .akar-l {
+    top: -10vw;
+    left: -40vw;
     width: 60vw !important;
   }
 
-  .techtalk-akar-r {
-    bottom: 0vw;
-    right: 0vw;
+  .akar-r {
+    top: 100px;
+    right: -650px;
     width: 80vw !important;
   }
 
-  .techtalk-rec {
-    bottom: 0vw;
-    right: 0vw;
-    width: 40vw;
-  }
-
-  /*
   .about-rectangle {
-    left: 55vw;
-    bottom: -30vw !important;
     width: calc(45vw * 1);
     height: calc(50vw * 0.9);
     transform: rotate(-38deg);
   }
-*/
-  .techtalk-about-btn i {
+
+  .about-btn i {
     display: block;
     opacity: 0;
     transition: all 0.125s ease-in-out;
   }
 
-  .techtalk-about-btn p {
+  .about-btn p {
     transform: translateX(10px);
     transition: all 0.125s ease-in-out;
   }
 
-  .techtalk-about-btn:hover p {
+  .about-btn:hover p {
     transform: translateX(-10px);
     transition: all 0.125s ease-in-out;
   }
 
-  .techtalk-about-btn:hover i {
+  .about-btn:hover i {
     opacity: 1;
     transition: all 0.125s ease-in-out;
     transform: translateX(16px);
@@ -601,42 +593,35 @@ nav button {
 }
 
 @media only screen and (min-width: 1280px) {
-  #techtalk-about {
-    margin-top: 450px !important; /*sementara*/
-  }
-
-  .techtalk-ball-1 {
+  .ball-1 {
     top: -20vw;
     width: 20vw;
   }
 
-  .techtalk-ball-2 {
+  .ball-2 {
     top: -5vw;
     right: 0vw;
     width: 35vw;
   }
 
-  .techtalk-akar-l {
-    top: -32vw;
-    left: -52vw;
-    width: 70vw !important;
+  .akar-l {
+    top: -10vw;
+    left: -50vw;
+    width: 60vw !important;
   }
 
-  .techtalk-akar-r {
-    bottom: -32vw !important;
-    right: 0vw;
-    width: 70vw !important;
+  .akar-r {
+    right: -500px;
+    width: 60vw !important;
   }
-  /*
+
   .about-rectangle {
-    left: 55vw;
-    bottom: -25vw !important;
     width: calc(45vw * 1);
     height: calc(50vw * 0.9);
     transform: rotate(-38deg);
   }
-*/
-  .techtalk-about-btn {
+
+  .about-btn {
     font-size: 22px;
     width: calc(275px / 0.8) !important;
     height: calc(72px / 1);
@@ -646,4 +631,221 @@ nav button {
 /* END OF ABOUT */
 
 /* FOOTER */
+footer {
+  height: 400px;
+  color: white;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background: linear-gradient(
+    45deg,
+    #0186ba -20%,
+    #022f46 30%,
+    #022f46 70%,
+    #0186ba 120%
+  );
+  font-family: "Giuconda-Regular";
+}
+
+footer img {
+  width: 200px;
+  /* object-fit: contain; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-bottom {
+  font-size: 22px;
+}
+
+.footer-nav {
+  font-size: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 4.5vw;
+  row-gap: 20px;
+}
+
+.footer-nav a {
+  position: relative;
+  text-decoration: none;
+  transition: 0.125s all ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: #ff84b2;
+}
+
+.footer-nav a::before {
+  background-color: #ff84b2;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  gap: 50px;
+  align-self: flex-end;
+}
+
+.contact-platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border-bottom: 2px solid #306a73;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.7));
+  backdrop-filter: blur(21px);
+}
+
+.contact-platform img {
+  width: 60%;
+}
+
+.support {
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  align-self: flex-end;
+}
+
+.support img {
+  height: 125px;
+  width: auto;
+}
+
+@media only screen and (max-width: 1279px) {
+  footer img {
+    width: 70%;
+  }
+
+  .contact-platform {
+    width: 40px;
+    height: 40px;
+  }
+
+  .support img {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  footer {
+    padding: 75px 0;
+  }
+
+  .footer-nav {
+    font-size: 18px;
+  }
+
+  .content-bottom {
+    font-size: 18px;
+  }
+
+  .support img {
+    height: 9vw;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 50px 0;
+    height: 325px;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  footer img {
+    width: 70%;
+  }
+
+  .content-bottom {
+    font-size: 16px;
+  }
+
+  .contact {
+    gap: 25px;
+  }
+
+  .contact-platform {
+    width: 35px;
+    height: 35px;
+  }
+
+  .support {
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  footer {
+    height: auto;
+  }
+
+  footer img {
+    width: 50%;
+  }
+
+  .content {
+    gap: 25px;
+  }
+
+  .content-top {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .content-bottom {
+    font-size: 14px;
+  }
+
+  .footer-nav {
+    font-size: 16px;
+  }
+
+  .support img {
+    height: 10vw;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer img {
+    width: 60%;
+  }
+
+  .contact-platform {
+    width: 6.8vw;
+    height: 6.8vw;
+  }
+
+  .support img {
+    height: 14vw;
+  }
+}
+
 /* END OF FOOTER */

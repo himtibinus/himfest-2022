@@ -1,441 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TechExpo - TECHFEST 2022</title>
-    <link rel="stylesheet" href="techexpo.css" />
-    <link rel="stylesheet" href="/font.css" />
-    <link rel="stylesheet" href="/universalstyle.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/android-chrome-192x192.png"
-      sizes="192x192"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/android-chrome-512x512.png"
-      sizes="512x512"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/favicon-32x32.png"
-      sizes="32x32"
-    />
+  <title>TechExpo - TECHFEST 2022</title>
+  <link rel="stylesheet" href="techexpo.css" />
+  <link rel="stylesheet" href="../font.css" />
+  <link rel="stylesheet" href="../universalstyle.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="../logoAndIcon/tabIcon/android-chrome-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="../logoAndIcon/tabIcon/android-chrome-512x512.png" sizes="512x512" />
+  <link rel="icon" type="image/png" href="../logoAndIcon/tabIcon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="../logoAndIcon/tabIcon/favicon-32x32.png" sizes="32x32" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body>
-    <div class="rectangle rectangle-green rectangle-1"></div>
-    <div class="absolute light light-pink light-1"></div>
-    <img
-      src="/competition/assets/lines.svg"
-      alt=""
-      class="absolute lines lines-1"
-    />
-    <!-- NAVBAR -->
-    <nav id="navbar" class="px-4 py-4 sm:px-12 lg:px-20 xl:px-28 2xl:px-40">
-      <a href="/index.html"
-        ><img src="/logoAndIcon/techfest_logo_trimmed.png" alt=""
-      /></a>
-      <div class="nav-bar">
-        <a href="/techtalk/techtalk.html">TechTalk</a>
-        <div>
-          <div class="dropdown relative">
-            <a
-              class="dropdown-toggle transition duration-150 ease-in-out flex items-center whitespace-nowrap"
-              href=""
-              type="button"
-              id="dropdownMenuButton2"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Competition
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="caret-down"
-                class="w-2 ml-2"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="dropdown-menu min-w-max absolute hidden glass text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
-              id="dropdown-box"
-              aria-labelledby="dropdownMenuButton2"
-            >
-              <li>
-                <a
-                  class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/competition/competition.html"
-                  >Competition</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/mobile/mobile.html"
-                  >Mobile Development</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/uiux/uiux.html"
-                  >UI/UX Design</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a href="/techexpo/techexpo.html">TechExpo</a>
-      </div>
-      <button
-        class="inline-block text-white rounded transition duration-150 ease-in-out"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-      >
-        <i class="bi bi-list menu-icon"></i>
-      </button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
 
-      <div
-        class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-full h-full"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="absolute light light-green offcanvas-light"></div>
-        <div class="offcanvas-header flex items-center justify-between p-4">
-          <img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" />
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-            style="font-size: 36px;"
-          >
-            <i class="bi bi-x close-icon"></i>
-          </button>
-        </div>
-
-        <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
-          <div class="offcanvas-list">
-            <a href="/comingSoon.html">TechTalk</a>
-            <a href="/competition/competition.html">Competition</a>
-            <a href="https://www.s.id/guidebook-techfest2022" class="indent">Mobile Development</a>
-            <a href="https://www.s.id/guidebook-techfest2022" class="indent">UI/UX Design</a>
-            <a href="/comingSoon.html">TechExpo</a>
-          </div>
+<body>
+  <div class="rectangle rectangle-green rectangle-1"></div>
+  <div class="absolute light light-pink light-1"></div>
+  <img src="../competition/assets/lines.svg" alt="" class="absolute lines lines-1" />
+  <!-- NAVBAR -->
+  <nav id="navbar" class="px-4 py-4 sm:px-12 lg:px-20 xl:px-28 2xl:px-40">
+    <a href="../index.html"><img src="../logoAndIcon/techfest_logo_trimmed.png" alt="" /></a>
+    <div class="nav-bar">
+      <a href="../techtalk/techtalk.html">TechTalk</a>
+      <div>
+        <div class="dropdown relative">
+          <a class="dropdown-toggle transition duration-150 ease-in-out flex items-center whitespace-nowrap" href=""
+            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Competition
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+              </path>
+            </svg>
+          </a>
+          <ul
+            class="dropdown-menu min-w-max absolute hidden glass text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+            id="dropdown-box" aria-labelledby="dropdownMenuButton2">
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="../competition/competition.html">Competition</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="../mobile/mobile.html">Mobile Development</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="../uiux/uiux.html">UI/UX Design</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <!-- END OF NAVBAR -->
+      <a href="../techexpo/techexpo.html">TechExpo</a>
+    </div>
+    <button class="inline-block text-white rounded transition duration-150 ease-in-out" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <i class="bi bi-list menu-icon"></i>
+    </button>
 
-    <!-- HERO -->
-    <div id="hero" class="mt-24 mb-16">
-      <div
-        class="hero-wrapper flex flex-col gap-7 mx-4 md:flex-row-reverse md:justify-start md:items-center md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40"
-      >
-        <img src="assets/heroImg.png" alt="" class="hero-img" />
+    <div
+      class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-full h-full"
+      tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="absolute light light-green offcanvas-light"></div>
+      <div class="offcanvas-header flex items-center justify-between p-4">
+        <img src="../logoAndIcon/techfest_logo_trimmed.png" alt="" />
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 36px;">
+          <i class="bi bi-x close-icon"></i>
+        </button>
+      </div>
 
-        <div class="hero-info flex flex-col gap-7 w-full">
-          <div id="hero-title" class="w-full flex">
-            <p
-              class="w-full text-sm text-center leading-normal md:text-xl md:text-left xl:text-xl 2xl:text-2xl"
-            >
-              HIMTI FESTIVAL 2022
-            </p>
-            <h1
-              class="text-[42px] text-center md:w-max md:text-5xl md:text-left lg:text-7xl 2xl:text-8xl"
-            >
-              TECHEXPO
-            </h1>
-          </div>
+      <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+        <div class="offcanvas-list">
+          <a href="../techtalk/techtalk.html">TechTalk</a>
+          <a href="../competition/competition.html">Competition</a>
+          <a href="../mobile/mobile.html" class="indent">Mobile Development</a>
+          <a href="../uiux/uiux.html" class="indent">UI/UX Design</a>
+          <a href="../techexpo/techexpo.html">TechExpo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
 
-          <p
-            class="hero-desc text-base text-center md:text-sm md:text-left xl:text-lg"
-          >
-            Ponam in culpa idiota allis pravitatis. Principium ponere culpam in
-            se justum praeceptum. Neque improperes et
+  <!-- HERO -->
+  <div id="hero" class="mt-24 mb-16">
+    <div
+      class="hero-wrapper flex flex-col gap-7 mx-4 md:flex-row-reverse md:justify-start md:items-center md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40">
+      <img src="assets/heroImg.png" alt="" class="hero-img" />
+
+      <div class="hero-info flex flex-col gap-7 w-full">
+        <div id="hero-title" class="w-full flex">
+          <p class="w-full text-sm text-center leading-normal md:text-xl md:text-left xl:text-xl 2xl:text-2xl">
+            HIMTI FESTIVAL 2022
           </p>
+          <h1 class="text-[42px] text-center md:w-max md:text-5xl md:text-left lg:text-7xl 2xl:text-8xl">
+            TECHEXPO
+          </h1>
+        </div>
 
-          <div
-            class="action flex justify-center items-center gap-7 md:gap-3 md:justify-start lg:gap-9"
-          >
-            <a
-              href="#"
-              class="glass text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg"
-            >
-              <p>Daftar Sekarang</p>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-            <a
-              href="#"
-              class="glass text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg"
-            >
-              <p>Unduh Guidebook</p>
-            </a>
-          </div>
+        <p class="hero-desc text-base text-center md:text-sm md:text-left xl:text-lg">
+          Ponam in culpa idiota allis pravitatis. Principium ponere culpam in
+          se justum praeceptum. Neque improperes et
+        </p>
+
+        <div class="action flex justify-center items-center gap-7 md:gap-3 md:justify-start lg:gap-9">
+          <a href="https://www.s.id/formReg-techfest2022" class="glass text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg">
+            <p>Daftar Sekarang</p>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="https://www.s.id/guidebook-techfest2022" class="glass text-sm flex self-center justify-center items-center gap-2 md:self-start lg:text-lg">
+            <p>Unduh Guidebook</p>
+          </a>
         </div>
       </div>
     </div>
-    <!-- END OF HERO -->
+  </div>
+  <!-- END OF HERO -->
 
-    <!-- OVERVIEW -->
+  <!-- OVERVIEW -->
 
-    <div class="giu-regular">
-      <!-- DESCRIPTION -->
+  <div class="giu-regular">
+    <!-- DESCRIPTION -->
 
+    <div class="w-full mt-48 md:mt-56 text-white flex flex-col justify-center items-center sm:justify-none smooth">
+      <h1
+        class="desc-header giu-semi-bold bg-white py-[5px] w-[165px] rounded-[30px] text-3xl text-center text-[#8E5794] flex justify-center md:self-start shrink smooth mb-16 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40">
+        TechExpo
+      </h1>
       <div
-        class="w-full mt-56 text-white flex flex-col justify-center items-center sm:justify-none smooth"
-      >
-        <h1
-          class="desc-header giu-semi-bold bg-white py-[5px] w-[165px] rounded-[30px] text-3xl text-center text-[#8E5794] flex justify-center md:self-start shrink smooth mb-16 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40"
-        >
-          TechExpo
-        </h1>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 sm:mx-20 gap-10 smooth mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40"
-        >
-          <div>
-            <h4 class="giu-semi-bold mb-10 text-3xl">
-              TechTalk
-            </h4>
-            <p class="text-xl xl:text-2xl event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-              labore quidem nobis possimus earum eveniet quaerat sint voluptate
-              vel itaque.
-            </p>
-          </div>
-          <div>
-            <h4 class="giu-semi-bold mb-10 text-3xl">
-              TechTalk
-            </h4>
-            <p class="text-xl xl:text-2xl event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-              labore quidem nobis possimus earum eveniet quaerat sint voluptate
-              vel itaque.
-            </p>
-          </div>
-          <div>
-            <h4 class="giu-semi-bold mb-10 text-3xl">
-              TechTalk
-            </h4>
-            <p class="text-xl xl:text-2xl event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-              labore quidem nobis possimus earum eveniet quaerat sint voluptate
-              vel itaque.
-            </p>
-          </div>
-          <div>
-            <h4 class="giu-semi-bold mb-10 text-3xl">
-              TechTalk
-            </h4>
-            <p class="text-xl xl:text-2xl event-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-              labore quidem nobis possimus earum eveniet quaerat sint voluptate
-              vel itaque.
-            </p>
-          </div>
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 sm:mx-20 gap-10 smooth mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40">
+        <div>
+          <h4 class="giu-semi-bold mb-10 text-3xl">
+            TechTalk
+          </h4>
+          <p class="text-xl xl:text-2xl event-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            labore quidem nobis possimus earum eveniet quaerat sint voluptate
+            vel itaque.
+          </p>
+        </div>
+        <div>
+          <h4 class="giu-semi-bold mb-10 text-3xl">
+            TechTalk
+          </h4>
+          <p class="text-xl xl:text-2xl event-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            labore quidem nobis possimus earum eveniet quaerat sint voluptate
+            vel itaque.
+          </p>
+        </div>
+        <div>
+          <h4 class="giu-semi-bold mb-10 text-3xl">
+            TechTalk
+          </h4>
+          <p class="text-xl xl:text-2xl event-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            labore quidem nobis possimus earum eveniet quaerat sint voluptate
+            vel itaque.
+          </p>
+        </div>
+        <div>
+          <h4 class="giu-semi-bold mb-10 text-3xl">
+            TechTalk
+          </h4>
+          <p class="text-xl xl:text-2xl event-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            labore quidem nobis possimus earum eveniet quaerat sint voluptate
+            vel itaque.
+          </p>
         </div>
       </div>
     </div>
-    <!-- END OF DESCRIPTION -->
+  </div>
+  <!-- END OF DESCRIPTION -->
 
-    <!-- EXHIBITION PARTNERS -->
-    <div
-      id="exhibition-partners"
-      class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 mt-40"
-    >
-      <img
-        src="assets/exhibitrec.svg"
-        alt=""
-        class="absolute rectangle exhibitrec-1 right-0"
-      />
-      <img
-        src="assets/exhibitrec.svg"
-        alt=""
-        class="absolute rectangle exhibitrec-2 left-0"
-      />
-      <h2 class="section-title text-center">
-        EXHIBITION PARTNER
+  <!-- EXHIBITION PARTNERS -->
+  <div id="exhibition-partners" class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 mt-28 md:mt-44 lg:mt-56 xl:mt-72">
+    <img src="assets/exhibitrec.svg" alt="" class="absolute rectangle exhibitrec-1 right-0" />
+    <img src="assets/exhibitrec.svg" alt="" class="absolute rectangle exhibitrec-2 left-0" />
+    <h2 class="section-title text-center">
+      EXHIBITION PARTNER
+    </h2>
+    <div class="partners flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-14 xl:justify-between xl:gap-20 mt-20">
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+      <a href="" class="partner-bg glass">
+        <img src="assets/apple.svg" alt="" />
+      </a>
+    </div>
+  </div>
+  <!-- END OF EXHIBITION PARTNERS -->
+
+  <!-- BENEFITS -->
+  <div id="benefits"
+    class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 flex flex-col items-center gap-7 md:flex-row-reverse md:justify-between mt-28 md:mt-44 lg:mt-56 xl:mt-72">
+    <img src="assets/giving_benefit_icon 1.png" alt="Benefit" />
+    <div class="benefit-desc text-white text-center md:w-[50%]">
+      <h2 class="mb-[2vw] font-[ProgressExtended-Bold] text-4xl md:text-left xl:text-[42px]">
+        BENEFITS
       </h2>
-      <div
-        class="partners flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-14 xl:justify-between xl:gap-20 mt-20"
-      >
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
-        <a href="" class="partner-bg glass">
-          <img src="assets/apple.svg" alt="" />
-        </a>
+      <p class="font-[Giuconda-Regular] w-[70%] mx-auto text-xl xl:text-2xl md:w-full md:text-left">
+        Ponam in culpa idiota allis pravitatis. Principium ponere culpam in se
+        justum praeceptum. Neque improperes et allis qui non perfecte ipse
+        docuit.
+        <br /><br />
+        Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et
+        Technologiae apud Massachusetts instituta Opera collectio.
+      </p>
+    </div>
+  </div>
+  <!-- END OF BENEFITS -->
+  <!-- END OF OVERVIEW -->
+
+  <!-- SPONSOR -->
+  <section class="mt-28 md:mt-44 lg:mt-56 xl:mt-72" class="relative">
+    <img src="../competition/assets/lines.svg" alt=""
+      class="absolute benefit-line right-0 w-[80vw] mt-[-40vw] md:w-[65vw] md:mt-[-50vw]">
+    <div class="absolute light light-pink w-[250px] h-[250px] mt-[150px] left-[-20px] md:w-[400px] md:h-[400px]"></div>
+    <div class="absolute light light-pink w-[250px] h-[250px] mt-[500px] right-0 md:w-[400px] md:h-[400px] md:mt-[700px] xl:mt-[850px]"></div>
+    <h2 class="section-title text-center mb-10">Our Sponsor</h2>
+
+    <div class="flex justify-center">
+      <div class="container-coloring w-3/4 flex flex-wrap gap-x-14 gap-y-7 justify-evenly px-2 py-4 glass">
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
+
+        <div class="img-sponsor">
+          <img src="../homepage/assets/dewaweb.svg" alt="" />
+        </div>
       </div>
     </div>
-    <!-- END OF EXHIBITION PARTNERS -->
-    <!-- BENEFITS -->
-    <div
-      id="benefits"
-      class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 mt-56 flex flex-col items-center gap-7 md:flex-row-reverse md:justify-between"
-    >
-      <img src="assets/giving_benefit_icon 1.png" alt="Benefit" />
-      <div class="benefit-desc text-white text-center md:w-[50%]">
-        <h2
-          class="mb-[2vw] font-[ProgressExtended-Bold] text-4xl md:text-left xl:text-[42px]"
-        >
-          BENEFITS
-        </h2>
-        <p
-          class="font-[Giuconda-Regular] w-[70%] mx-auto text-xl xl:text-2xl md:w-full md:text-left"
-        >
-          Ponam in culpa idiota allis pravitatis. Principium ponere culpam in se
-          justum praeceptum. Neque improperes et allis qui non perfecte ipse
-          docuit.
-          <br /><br />
-          Quod Enchiridion Epictetus stoici scripsit. Rodrigo Abela et
-          Technologiae apud Massachusetts instituta Opera collectio.
-        </p>
+  </section>
+  <!-- END OF SPONSOR -->
+
+  <!-- ABOUT -->
+  <div id="about" class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 my-28 md:my-44 lg:my-56 xl:my-60">
+    <img src="/assets/ball.svg" alt="" class="ball ball-1" />
+    <img src="/assets/ball.svg" alt="" class="ball ball-2" />
+    <img src="/assets/akar.svg" alt="" class="akar-l" />
+    <img src="/assets/akar.svg" alt="" class="akar-r" />
+    <div class="rectangle rectangle-green about-rectangle"></div>
+
+    <div class="about-info flex flex-col gap-7">
+      <p class="join text-[36px] sm:text-5xl md:w-max md:text-6xl xl:text-7xl">
+        JOIN<br />
+        TECHEXPO<br />
+        SEKARANG!
+      </p>
+      <a href="" class="about-btn glass">
+        <p>Daftar TechExpo Sekarang</p>
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  <!-- END OF ABOUT -->
+
+  <!-- FOOTER -->
+  <footer class="py-[50px] px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
+    <div class="content">
+      <div class="content-top">
+        <div class="footer-logo">
+          <a href="../index.html"
+            ><img src="../logoAndIcon/techfest_logo_trimmed.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-nav">
+          <a href="../comingSoon.html" class="underline-anim">TechTalk</a>
+          <a href="../aboutUs/about.html" class="underline-anim">About</a>
+          <a href="../competition/competition.html" class="underline-anim">Competition</a>
+          <a href="https://www.s.id/formReg-techfest2022" target="_blank" class="underline-anim">Register</a>
+          <a href="../comingSoon.html" class="underline-anim">TechExpo</a>
+          <a href="../index.html#faq" class="underline-anim">FAQ</a>
+        </div>
+      </div>
+      <div class="content-bottom">
+        &copy; 2022 TECHFEST | TECHFEST is an event created by HIMTI BINUS
+        UNIVERSITY
       </div>
     </div>
-    <!-- END OF BENEFITS -->
-    <!-- END OF OVERVIEW -->
 
-    <!-- SPONSOR -->
-    <!-- END OF SPONSOR -->
-
-    <!-- ABOUT -->
-    <div
-      id="about"
-      class="mx-4 md:mx-12 lg:mx-20 xl:mx-28 2xl:mx-40 my-28 md:my-44 lg:my-56 xl:my-60"
-    >
-      <img src="assets/ball.svg" alt="" class="ball ball-1" />
-      <img src="assets/ball.svg" alt="" class="ball ball-2" />
-      <img src="assets/akar.svg" alt="" class="akar-l" />
-      <img src="assets/akar.svg" alt="" class="akar-r" />
-      <div class="rectangle rectangle-green about-rectangle"></div>
-
-      <div class="about-info flex flex-col gap-7">
-        <p
-          class="join text-[36px] sm:text-5xl md:w-max md:text-6xl xl:text-7xl"
-        >
-          JOIN<br />
-          TECHEXPO<br />
-          SEKARANG!
-        </p>
-        <a href="" class="about-btn glass"
-          ><p>Daftar TechExpo Sekarang</p>
-          <i class="bi bi-arrow-right"></i
-        ></a>
+    <div class="social">
+      <div class="contact">
+        <a href="" class="contact-platform flex justify-center items-center"
+          ><i 
+          class="bi bi-line text-white text-lg hover:text-[#ff84b2] transition pt-2
+          md:text-xl xl:text-2xl"></i></a>
+        <a href="" class="contact-platform flex justify-center items-center"
+          ><i 
+          class="bi bi-whatsapp text-white text-lg hover:text-[#ff84b2] transition pt-2
+          md:text-xl xl:text-2xl"></i></a></a>
+        <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center"
+          ><i 
+          class="bi bi-instagram text-white text-lg hover:text-[#ff84b2] transition pt-2
+          md:text-xl xl:text-2xl"></i></a></a>
+      </div>
+      <div class="support">
+        <img src="../assets/logoHimti.png" alt="" class="object-contain"/>
+        <img src="../assets/logoBinus.png" alt="" class="object-contain" />
       </div>
     </div>
-    <!-- END OF ABOUT -->
+  </footer>
+  <!-- END OF FOOTER -->
+  <script src="techexpo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
 
-    <!-- FOOTER -->
-    <footer class="px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
-      <div class="content">
-        <div class="content-top">
-          <div class="footer-logo">
-            <a href="/index.html"
-              ><img src="/logoAndIcon/techfest_logo_trimmed.png" alt=""
-            /></a>
-          </div>
-          <div class="footer-nav">
-            <a href="/techtalk/techtalk.html" class="underline-anim"
-              >TechTalk</a
-            >
-            <a href="/aboutUs/about.html" class="underline-anim">About</a>
-            <a href="/competition/competition.html" class="underline-anim"
-              >Competition</a
-            >
-            <a href="/register/register.html" class="underline-anim"
-              >Register</a
-            >
-            <a href="/techexpo/techexpo.html" class="underline-anim"
-              >TechExpo</a
-            >
-            <a href="" class="underline-anim">FAQ</a>
-          </div>
-        </div>
-        <div class="content-bottom">
-          &copy; 2022 TECHFEST | TECHFEST is an event created by HIMTI BINUS
-          UNIVERSITY
-        </div>
-      </div>
-
-      <div class="social">
-        <div class="contact">
-          <a href="" class="contact-platform"
-            ><img src="assets/WA.svg" alt=""
-          /></a>
-          <a href="" class="contact-platform"
-            ><img src="assets/line.svg" alt=""
-          /></a>
-          <a href="" class="contact-platform"
-            ><img src="assets/IG.svg" alt=""
-          /></a>
-        </div>
-        <div class="support">
-          <img src="assets/logoHimti.png" alt="" />
-          <img src="assets/logoBinus.png" alt="" />
-        </div>
-      </div>
-    </footer>
-    <!-- END OF FOOTER -->
-    <script src="techexpo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  </body>
 </html>
