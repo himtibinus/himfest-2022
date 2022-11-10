@@ -188,6 +188,7 @@
           <div class="form-group">
             <label for="tim" class="self-start">Nama Tim</label>
             <input
+              id="team-name-input"
               class="w-full h-[72px] rounded-2xl px-4 py-4"
               type="text"
               name="tim"
@@ -200,6 +201,7 @@
           <div class="form-group">
             <label for="email" class="self-start">Email</label>
             <input
+              id="email-input"
               class="w-full h-[72px] rounded-2xl px-4 py-4 text-xl"
               type="email"
               name="email"
@@ -212,6 +214,7 @@
           <div class="form-group">
             <label for="universitas" class="self-start">Universitas</label>
             <input
+              id="university-input"
               class="w-full h-[72px] rounded-2xl px-4 py-4"
               type="text"
               name="universitas"
@@ -226,6 +229,7 @@
             <div class="anggota w-full flex flex-col gap-5">
               <p>Anggota</p>
               <input
+                id="leader-name-input"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="anggota1"
@@ -251,6 +255,7 @@
             <div class="nim w-full flex flex-col gap-5">
               <p>NIM</p>
               <input
+                id="leader-nim-input"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="nim1"
@@ -259,6 +264,7 @@
               />
               <p id="error-nim1" class="error-tag min-h-[32px]"></p>
               <input
+                id="anggota-2-nim"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="nim2"
@@ -267,6 +273,7 @@
               />
               <p id="error-nim2" class="error-tag min-h-[32px]"></p>
               <input
+                id="anggota-3-nim"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="nim3"
@@ -281,6 +288,7 @@
             <div class="anggota w-full flex flex-col gap-5">
               <p>ID LINE (Ketua)</p>
               <input
+                id="line-input"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="line"
@@ -292,6 +300,7 @@
             <div class="nim w-full flex flex-col gap-5">
               <p>No. WA (Ketua)</p>
               <input
+                id="wa-input"
                 class="w-full h-[72px] rounded-2xl px-4 py-4"
                 type="text"
                 name="wa"
@@ -312,6 +321,7 @@
               >Link Folder Drive <i class="bi bi-folder ml-2"></i
             ></label>
             <input
+              id="url-input"
               class="w-full h-[72px] rounded-2xl px-4 py-4"
               type="text"
               name="link"
@@ -333,7 +343,12 @@
           </div>
 
           <div class="payment self-start">
-            <h3>Dokumen dalam folder Google drive</h3>
+            <h3>Dokumen dalam folder 
+              <a href="https://s.id/twibbon-techfest2022"
+              class="text-lime-300 underline hover:text-lime-500" target="_blank">
+                Google drive
+              </a>
+            </h3>
             <ul>
               <li><em>Scan KTM</em> masing-masing anggota. [ Format nama file: <em>KTM - NamaLengkap</em> ]</li>
               <li><em>Bukti transfer</em> kepada rekening <em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em> sebesar Rp75.003,00 [ Format nama file: <em>BuktiTransfer - NamaTim</em> ]</li>
@@ -344,6 +359,7 @@
           <div class="form-group">
             <label for="sender" class="self-start">Nama Pembayar</label>
             <input
+              id="payer-input"
               class="w-full h-[72px] rounded-2xl px-4 py-4"
               type="text"
               name="sender"
@@ -405,6 +421,11 @@
           <button class="glass py-4 px-28 rounded-[16px]
           hover:border-[#ff84b2] hover:text-[#ff84b2] transition" type="submit" id="submit-btn">SUBMIT</button>
         </div>
+
+        <!-- <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
+          <button class="glass py-4 px-28 rounded-[16px]
+          hover:border-[#ff84b2] hover:text-[#ff84b2] transition" type="submit" id="submit-btn">SUBMIT</button>
+        </div> -->
       </div>
     </div>
     <!-- END OF REGISTER -->
@@ -435,18 +456,18 @@
 
       <div class="social">
         <div class="contact">
-          <a href="" class="contact-platform flex justify-center items-center"
+          <a href="mailto:techfest.himti@gmail.com"  class="contact-platform flex justify-center items-center"
             ><i 
-            class="bi bi-line text-white text-lg hover:text-[#ff84b2] transition pt-2
+            class="bi bi-envelope text-white text-lg hover:text-[#ff84b2] transition pt-2
             md:text-xl xl:text-2xl"></i></a>
-          <a href="" class="contact-platform flex justify-center items-center"
+          <a href="http://wa.me/6287776294563" class="contact-platform flex justify-center items-center"
             ><i 
             class="bi bi-whatsapp text-white text-lg hover:text-[#ff84b2] transition pt-2
-            md:text-xl xl:text-2xl"></i></a></a>
+            md:text-xl xl:text-2xl"></i></a>
           <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center" target="_blank"
             ><i 
             class="bi bi-instagram text-white text-lg hover:text-[#ff84b2] transition pt-2
-            md:text-xl xl:text-2xl"></i></a></a>
+            md:text-xl xl:text-2xl"></i></a>
         </div>
         <div class="support">
           <img src="../assets/logoHimti.png" alt="" class="object-contain"/>
