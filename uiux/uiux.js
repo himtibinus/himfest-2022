@@ -34,7 +34,7 @@ function fallback(one, two) {
         event: "TECHNICAL MEETING"
       },
       {
-        date: new Date(2022, 10, 26, 23, 59, 59),
+        date: new Date(2022, 11, 4, 23, 59, 59),
         event: "CLOSE REGISTRATION"
       },
       {

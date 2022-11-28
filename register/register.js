@@ -29,11 +29,11 @@ const validate = (data, checkbox) => {
     document.getElementById("payer-input").focus();
     flag=false;
   }
-  else if (data.payer_name!="" & !(String(data.payer_name).match('^[a-zA-Z ]+$'))){
-    document.getElementById('error-sender').innerHTML = "Must be alphabetical";
-    document.getElementById("payer-input").focus();
-    flag=false;
-  }
+  // else if (data.payer_name!="" & !(String(data.payer_name).match('^[a-zA-Z ]+$'))){
+  //   document.getElementById('error-sender').innerHTML = "Must be alphabetical";
+  //   document.getElementById("payer-input").focus();
+  //   flag=false;
+  // }
   
   // url
   if(!data.url){
@@ -77,36 +77,36 @@ const validate = (data, checkbox) => {
   }
   
   // member validation
-  if(data.member1_nim!="" & !(String(data.member1_nim).match('^[0-9]+$'))){
-    if(/\s/.test(String(data.member1_nim))){
-      document.getElementById('error-nim2').innerHTML = "No whitespace allowed";
-    }
-    else{
-      document.getElementById('error-nim2').innerHTML = "Must be numerical";
-    }
+  // if(data.member1_nim!="" & !(String(data.member1_nim).match('^[0-9]+$'))){
+  //   if(/\s/.test(String(data.member1_nim))){
+  //     document.getElementById('error-nim2').innerHTML = "No whitespace allowed";
+  //   }
+  //   else{
+  //     document.getElementById('error-nim2').innerHTML = "Must be numerical";
+  //   }
 
-    flag=false;
-  }
-  if(data.member2_nim!="" & !(String(data.member2_nim).match('^[0-9]+$'))){
-    if(/\s/.test(String(data.member2_nim))){
-      document.getElementById('error-nim3').innerHTML = "No whitespace allowed";
-    }
-    else{
-      document.getElementById('error-nim3').innerHTML = "Must be numerical & no whitespace";
-    }
+  //   flag=false;
+  // }
+  // if(data.member2_nim!="" & !(String(data.member2_nim).match('^[0-9]+$'))){
+  //   if(/\s/.test(String(data.member2_nim))){
+  //     document.getElementById('error-nim3').innerHTML = "No whitespace allowed";
+  //   }
+  //   else{
+  //     document.getElementById('error-nim3').innerHTML = "Must be numerical & no whitespace";
+  //   }
     
-    flag=false;
-  }
+  //   flag=false;
+  // }
 
   // members' names
-  if(data.member1_name!="" & !(String(data.member1_name).match('^[a-zA-Z ]+$'))){
-    document.getElementById('error-anggota2').innerHTML = "Must be alphabetical";
-    flag=false;
-  }
-  if(data.member2_name!="" & !(String(data.member2_name).match('^[a-zA-Z ]+$'))){
-    document.getElementById('error-anggota3').innerHTML = "Must be alphabetical";
-    flag=false;
-  }
+  // if(data.member1_name!="" & !(String(data.member1_name).match('^[a-zA-Z ]+$'))){
+  //   document.getElementById('error-anggota2').innerHTML = "Must be alphabetical";
+  //   flag=false;
+  // }
+  // if(data.member2_name!="" & !(String(data.member2_name).match('^[a-zA-Z ]+$'))){
+  //   document.getElementById('error-anggota3').innerHTML = "Must be alphabetical";
+  //   flag=false;
+  // }
 
   // leader nim
   if(!data.leader_nim){
@@ -114,16 +114,16 @@ const validate = (data, checkbox) => {
     document.getElementById("leader-nim-input").focus();
     flag=false;
   }
-  else if(data.leader_nim!="" & !(String(data.leader_nim).match('^[0-9]+$'))){
-    if(/\s/.test(String(data.leader_nim))){
-      document.getElementById('error-nim1').innerHTML = "No whitespace allowed";
-    }
-    else{
-      document.getElementById('error-nim1').innerHTML = "Must be numerical";
-    } 
-    document.getElementById("leader-nim-input").focus();
-    flag=false;
-  }
+  // else if(data.leader_nim!="" & !(String(data.leader_nim).match('^[0-9]+$'))){
+  //   if(/\s/.test(String(data.leader_nim))){
+  //     document.getElementById('error-nim1').innerHTML = "No whitespace allowed";
+  //   }
+  //   else{
+  //     document.getElementById('error-nim1').innerHTML = "Must be numerical";
+  //   } 
+  //   document.getElementById("leader-nim-input").focus();
+  //   flag=false;
+  // }
 
   // leader name
   if(!data.leader_name){
@@ -131,11 +131,11 @@ const validate = (data, checkbox) => {
     document.getElementById("leader-name-input").focus();
     flag=false;
   }
-  else if(data.leader_name!="" & !(String(data.leader_name).match('^[a-zA-Z ]+$'))){
-    document.getElementById('error-anggota1').innerHTML = "Must be alphabetical";
-    document.getElementById("leader-name-input").focus();
-    flag=false;
-  }
+  // else if(data.leader_name!="" & !(String(data.leader_name).match('^[a-zA-Z ]+$'))){
+  //   document.getElementById('error-anggota1').innerHTML = "Must be alphabetical";
+  //   document.getElementById("leader-name-input").focus();
+  //   flag=false;
+  // }
 
   // university
   if(!data.university){
