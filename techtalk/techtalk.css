@@ -151,10 +151,11 @@ nav button {
 }
 
 .light-1 {
-  top: 200px;
-  right: 125px;
+  top: 0px;
+  right: 0px;
   width: 200px;
-  height: 200px;
+  height: 400px;
+  border-radius: 350px 0 0 350px;
 }
 
 #hero {
@@ -350,14 +351,57 @@ nav button {
   transition: all 0.5s ease-in-out;
 }
 
-.speaker-rect {
-  z-index: -1;
+.speaker-overlay {
+  overflow: hidden;
 }
 
-.speaker-line {
-  z-index: -1;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+@media (min-width: 1024px) {
+  .speaker {
+    position: relative;
+  }
+  
+  .speaker-overlay {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s ease-in;
+    opacity: 0;
+    border-radius: 50%;
+  }
+  
+  .speaker:hover .speaker-overlay {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+
+@media (max-width: 371px) {
+  .special {
+    top: 35rem;
+  }
+}
+
+@media (min-width: 616px) {
+  .special {
+    top: 31rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .special {
+    top: 35rem;
+  }
+}
+
+@media (min-width: 656px) {
+  .special {
+    top: 33rem;
+  }
 }
 
 /* END OF SPEAKERS */
