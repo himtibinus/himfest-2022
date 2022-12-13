@@ -1,482 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Register - TECHFEST 2022</title>
-    <link rel="stylesheet" href="register.css" />
-    <link rel="stylesheet" href="/font.css" />
-    <link rel="stylesheet" href="/universalstyle.css" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/android-chrome-192x192.png"
-      sizes="192x192"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/android-chrome-512x512.png"
-      sizes="512x512"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/logoAndIcon/tabIcon/favicon-32x32.png"
-      sizes="32x32"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - TECHFEST 2022</title>
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="/font.css" />
+  <link rel="stylesheet" href="/universalstyle.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/android-chrome-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/android-chrome-512x512.png" sizes="512x512" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/logoAndIcon/tabIcon/favicon-32x32.png" sizes="32x32" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body>
-    <img src="../assets/aura.svg" alt="" class="absolute aura aura-1" />
-    <div class="absolute light light-green light-1"></div>
-    <div class="absolute light light-green light-2"></div>
-    <img src="assets/aura2.svg" alt="" class="absolute aura aura-2" />
-    <!-- NAVBAR -->
-    <nav id="navbar" class="px-4 py-4 sm:px-12 lg:px-20 xl:px-28 2xl:px-40">
-      <a href="/index.html"
-        ><img src="/logoAndIcon/techfest_logo_trimmed.png" alt=""
-      /></a>
-      <div class="nav-bar">
-        <a href="../techtalk/techtalk.html">TechTalk</a>
-        <div>
-          <div class="dropdown relative">
-            <a
-              class="dropdown-toggle transition duration-150 ease-in-out flex items-center whitespace-nowrap"
-              href=""
-              type="button"
-              id="dropdownMenuButton2"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Competition
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="caret-down"
-                class="w-2 ml-2"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="dropdown-menu min-w-max absolute hidden glass text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
-              id="dropdown-box" aria-labelledby="dropdownMenuButton2">
-              <li>
-                <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/competition/competition.html">Competition</a>
-              </li>
-              <!-- <li>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <img src="../assets/aura.svg" alt="" class="absolute aura aura-1" />
+  <div class="absolute light light-green light-1"></div>
+  <div class="absolute light light-green light-2"></div>
+  <img src="assets/aura2.svg" alt="" class="absolute aura aura-2" />
+  <!-- NAVBAR -->
+  <nav id="navbar" class="px-4 py-4 sm:px-12 lg:px-20 xl:px-28 2xl:px-40">
+    <a href="/index.html"><img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" /></a>
+    <div class="nav-bar">
+      <a href="../techtalk/techtalk.html">TechTalk</a>
+      <div>
+        <div class="dropdown relative">
+          <a class="dropdown-toggle transition duration-150 ease-in-out flex items-center whitespace-nowrap" href=""
+            type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Competition
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+              </path>
+            </svg>
+          </a>
+          <ul
+            class="dropdown-menu min-w-max absolute hidden glass text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+            id="dropdown-box" aria-labelledby="dropdownMenuButton2">
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/competition/competition.html">Competition</a>
+            </li>
+            <!-- <li>
                 <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
                   href="https://www.s.id/formReg-techfest2022" target="_blank">Register</a>
               </li> -->
-              <li>
-                <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/mobile/mobile.html">Mobile Development</a>
-              </li>
-              <li>
-                <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
-                  href="/uiux/uiux.html">UI/UX Design</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <a href="/techexpo/techexpo.html">TechExpo</a>
-      </div>
-      <button
-        class="inline-block text-white rounded transition duration-150 ease-in-out"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-      >
-        <i class="bi bi-list menu-icon"></i>
-      </button>
-
-      <div
-        class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-full h-full"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="absolute light light-green offcanvas-light"></div>
-        <div class="offcanvas-header flex items-center justify-between p-4">
-          <img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" />
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-            style="font-size: 36px;"
-          >
-            <i class="bi bi-x close-icon"></i>
-          </button>
-        </div>
-
-        <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
-          <div class="offcanvas-list">
-            <a href="../techtalk/techtalk.html">TechTalk</a>
-            <a href="/competition/competition.html">Competition</a>
-            <a href="/mobile/mobile.html" class="indent">Mobile Development</a>
-            <a href="/uiux/uiux.html" class="indent">UI/UX Design</a>
-            <a href="/techexpo/techexpo.html">TechExpo</a>
-          </div>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/mobile/mobile.html">Mobile Development</a>
+            </li>
+            <li>
+              <a class="dropdown-item text-sm py-2 px-4 block w-full whitespace-nowrap bg-transparent"
+                href="/uiux/uiux.html">UI/UX Design</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <!-- END OF NAVBAR -->
+      <a href="/techexpo/techexpo.html">TechExpo</a>
+    </div>
+    <button class="inline-block text-white rounded transition duration-150 ease-in-out" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <i class="bi bi-list menu-icon"></i>
+    </button>
 
-    <!-- REGISTER -->
     <div
-      id="register"
-      class="my-56 w-full flex justify-center items-center flex-col"
-    >
-      <h2 class="mb-8">REGISTER</h2>
+      class="offcanvas offcanvas-end fixed bottom-0 flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-full h-full"
+      tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="absolute light light-green offcanvas-light"></div>
+      <div class="offcanvas-header flex items-center justify-between p-4">
+        <img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" />
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 36px;">
+          <i class="bi bi-x close-icon"></i>
+        </button>
+      </div>
 
-      <div class="form-wrapper glass px-12 py-8 mx-auto p-0 rounded-3xl">
-        <form class="w-full mt-5 flex flex-col items-center gap-8" action="" id="regist-form">
-          <div class="form-group">
-            <label for="event" class="self-start">Event</label>
-            <select
-              name="event"
-              id="event"
-              class="w-full h-[72px] rounded-2xl px-4 py-4 text-xl"
-              required
-            >
-              <option value="" class="text-2xl"selected disabled hidden>Choose Event</option>
-              <!-- <option value="techexpo">TechExpo</option> -->
-              <option value="techtalk">TechTalk</option>
-              <!-- <optgroup label="Competition" class="text-black text-xl">
+      <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+        <div class="offcanvas-list">
+          <a href="../techtalk/techtalk.html">TechTalk</a>
+          <a href="/competition/competition.html">Competition</a>
+          <a href="/mobile/mobile.html" class="indent">Mobile Development</a>
+          <a href="/uiux/uiux.html" class="indent">UI/UX Design</a>
+          <a href="/techexpo/techexpo.html">TechExpo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAVBAR -->
+
+  <!-- REGISTER -->
+  <div id="register" class="my-56 w-full flex justify-center items-center flex-col">
+    <h2 class="mb-8">REGISTER</h2>
+
+    <div class="form-wrapper glass px-12 py-8 mx-auto p-0 rounded-3xl">
+      <form class="w-full mt-5 flex flex-col items-center gap-8" action="" id="regist-form">
+        <div class="form-group">
+          <label for="event" class="self-start">Event</label>
+          <select name="event" id="event" class="w-full h-[72px] rounded-2xl px-4 py-4 text-xl" required>
+            <option value="" class="text-2xl" selected disabled hidden>Choose Event</option>
+            <!-- <option value="techexpo">TechExpo</option> -->
+            <option value="techtalk">TechTalk</option>
+            <!-- <optgroup label="Competition" class="text-black text-xl">
                 <option value="uiux">UI/UX Design</option>
                 <option value="mobile">Mobile Development</option>
               </optgroup> -->
-            </select>
-            <p id="error-event" class="error-tag min-h-[32px]"></p>
-          </div>
-
-          <div class="form-group">
-            <label for="tim" class="self-start">Nama Tim</label>
-            <input
-              id="team-name-input"
-              class="w-full h-[72px] rounded-2xl px-4 py-4"
-              type="text"
-              name="tim"
-              placeholder="Nama Tim"
-              required
-            />
-            <p id="error-team" class="error-tag min-h-[32px]"></p>
-          </div>
-
-          <div class="form-group">
-            <label for="email" class="self-start">Email</label>
-            <input
-              id="email-input"
-              class="w-full h-[72px] rounded-2xl px-4 py-4 text-xl"
-              type="email"
-              name="email"
-              placeholder="example@mail.com"
-              required
-            />
-            <p id="error-email" class="error-tag min-h-[32px]"></p>
-          </div>
-          
-          <div class="form-group">
-            <label for="universitas" class="self-start">Universitas</label>
-            <input
-              id="university-input"
-              class="w-full h-[72px] rounded-2xl px-4 py-4"
-              type="text"
-              name="universitas"
-              placeholder="Nama Universitas"
-              required
-            />
-            <p id="error-universitas" class="error-tag min-h-[32px]"></p>
-          </div>
-          
-
-          <div class="w-full list-anggota flex gap-3 justify-between">
-            <div class="anggota w-full flex flex-col gap-5">
-              <p>Anggota</p>
-              <input
-                id="leader-name-input"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="anggota1"
-                placeholder="Anggota 1"
-                required
-              />
-              <p id="error-anggota1" class="error-tag min-h-[32px]"></p>
-              <input
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="anggota2"
-                placeholder="Anggota 2"
-              />
-              <p id="error-anggota2" class="error-tag min-h-[32px]"></p>
-              <input
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="anggota3"
-                placeholder="Anggota 3"
-              />
-              <p id="error-anggota3" class="error-tag min-h-[32px]"></p>
-            </div>
-            <div class="nim w-full flex flex-col gap-5">
-              <p>NIM</p>
-              <input
-                id="leader-nim-input"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="nim1"
-                placeholder="NIM Anggota 1"
-                required
-              />
-              <p id="error-nim1" class="error-tag min-h-[32px]"></p>
-              <input
-                id="anggota-2-nim"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="nim2"
-                placeholder="NIM Anggota 2"
-                required
-              />
-              <p id="error-nim2" class="error-tag min-h-[32px]"></p>
-              <input
-                id="anggota-3-nim"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="nim3"
-                placeholder="NIM Anggota 3"
-                required
-              />
-              <p id="error-nim3" class="error-tag min-h-[32px]"></p>
-            </div>
-          </div>
-
-          <div class="w-full list-anggota flex gap-3 justify-between">
-            <div class="anggota w-full flex flex-col gap-5">
-              <p>ID LINE (Ketua)</p>
-              <input
-                id="line-input"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="line"
-                placeholder="ID LINE Ketua"
-                required
-              />
-              <p id="error-line" class="error-tag min-h-[32px]"></p>
-            </div>
-            <div class="nim w-full flex flex-col gap-5">
-              <p>No. WA (Ketua)</p>
-              <input
-                id="wa-input"
-                class="w-full h-[72px] rounded-2xl px-4 py-4"
-                type="text"
-                name="wa"
-                placeholder="No. WA Ketua"
-                required
-              />
-              <p id="error-wa" class="error-tag min-h-[32px]"></p>
-            </div>
-          </div>
-
-          <div class="total w-full flex justify-between">
-            <p><i class="bi bi-cash"></i> Total:</p>
-            <b id="total-price">Rp0,00</b>
-          </div>
-
-          <div class="form-group">
-            <label for="link" class="self-start"
-              >Link Folder Drive <i class="bi bi-folder ml-2"></i
-            ></label>
-            <input
-              id="url-input"
-              class="w-full h-[72px] rounded-2xl px-4 py-4"
-              type="text"
-              name="link"
-              placeholder="Link"
-              required
-            />
-            <p id="error-link" class="error-tag min-h-[32px]"></p>
-          </div>
-
-          <div class="payment self-start">
-            <h3>Tata cara pembayaran</h3>
-            <ol>
-              <li>Lakukan registrasi melalui website resmi TECHFEST 2022</li>
-              <li>Kirim biaya pendaftaran melalui rekening dengan menambahkan kode unik.<br><em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em></li>
-              <li>Pastikan nominal telah menggunakan <em>kode unik (003)</em><br>(Contoh: Rp75.003)</li>
-              <li>Unggah bukti pembayaran pada <em>Google Drive</em> untuk melakukan validasi bahwa Anda telah melakukan pembayaran</li>
-              <li>Panitia akan melakukan validasi dan memberikan konfirmasi bahwa pendaftaran telah berhasil melalui email paling lambat 2x24 jam.</li>
-            </ol>
-          </div>
-
-          <div class="payment self-start">
-            <h3>Dokumen dalam folder 
-              <a href="https://s.id/twibbon-techfest2022"
-              class="text-lime-300 underline hover:text-lime-500" target="_blank">
-                Google drive
-              </a>
-            </h3>
-            <ul>
-              <li><em>Scan KTM</em> masing-masing anggota. [ Format nama file: <em>KTM - NamaLengkap</em> ]</li>
-              <li><em>Bukti transfer</em> kepada rekening <em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em> sebesar Rp75.003,00 [ Format nama file: <em>BuktiTransfer - NamaTim</em> ]</li>
-              <li><em>Bukti post twibbon</em> dan poster masing-masing anggota [ Format nama file: <em>BuktiTwibbon - NamaAnggota</em> ]</li>
-            </ul>
-          </div>
-
-          <div class="form-group">
-            <label for="sender" class="self-start">Nama Pembayar</label>
-            <input
-              id="payer-input"
-              class="w-full h-[72px] rounded-2xl px-4 py-4"
-              type="text"
-              name="sender"
-              placeholder="Nama Pembayar"
-              required
-            />
-            <p id="error-sender" class="error-tag min-h-[32px]"></p>
-          </div>
-
-          <div class="cp w-full flex flex-col gap-5">
-            <h3 class="text-2xl">Contact Person</h3>
-            <h4 class="text-xl mx-4 sm:mx-8">UI/UX</h4>
-            <div class="cp-list flex flex-col md:flex-row justify-between mx-4 sm:mx-16">
-              <div class="line flex gap-3 items-center">
-                <i 
-                class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
-                md:text-lg xl:text-xl"></i>daviddisinii (Fathi)</a>
-              </div>
-              <div class="line flex gap-3 items-center">
-                <i 
-                class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
-                md:text-lg xl:text-xl"></i>timothysigar (Beckham)</a>
-              </div>
-            </div>
-
-            <h4 class="text-xl mx-4 sm:mx-8">Mobile Development</h4>
-            <div class="cp-list flex flex-col md:flex-row justify-between mx-4 sm:mx-16">
-              <div class="line flex gap-3 items-center">
-                <i 
-                class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
-                md:text-lg xl:text-xl"></i>alvon_gogeta14 (Alvon)</a>
-              </div>
-              <div class="line flex gap-3 items-center">
-                <i 
-                class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
-                md:text-lg xl:text-xl"></i>mcumyyyyyy (Rumy T.)</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="statement-container w-full">
-            <div class="statement flex gap-3 items-center self-start">
-              <input
-                type="checkbox"
-                id="doublecheck"
-                name="doublecheck"
-                value="checked"
-                required
-              />
-              <label for="doublecheck"
-                >I have double checked all information I have given.</label
-              >
-            </div>
-            <p id="unchecked-box" class="error-tag min-h-[32px] self-start"></p>
-          </div>
-        </form>
-
-        <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
-          <button class="glass py-4 px-28 rounded-[16px]
-          hover:border-[#ff84b2] hover:text-[#ff84b2] transition" type="submit" id="submit-btn">SUBMIT</button>
+          </select>
+          <p id="error-event" class="error-tag min-h-[32px]"></p>
         </div>
 
-        <!-- <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
+        <div class="form-group">
+          <label for="tim" class="self-start">Nama Tim</label>
+          <input id="team-name-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="tim"
+            placeholder="Nama Tim" required />
+          <p id="error-team" class="error-tag min-h-[32px]"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="self-start">Email</label>
+          <input id="email-input" class="w-full h-[72px] rounded-2xl px-4 py-4 text-xl" type="email" name="email"
+            placeholder="example@mail.com" required />
+          <p id="error-email" class="error-tag min-h-[32px]"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="universitas" class="self-start">Universitas</label>
+          <input id="university-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="universitas"
+            placeholder="Nama Universitas" required />
+          <p id="error-universitas" class="error-tag min-h-[32px]"></p>
+        </div>
+
+
+        <div class="w-full list-anggota flex gap-3 justify-between">
+          <div class="anggota w-full flex flex-col gap-5">
+            <p>Anggota</p>
+            <input id="leader-name-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="anggota1"
+              placeholder="Anggota 1" required />
+            <p id="error-anggota1" class="error-tag min-h-[32px]"></p>
+            <input class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="anggota2" placeholder="Anggota 2" />
+            <p id="error-anggota2" class="error-tag min-h-[32px]"></p>
+            <input class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="anggota3" placeholder="Anggota 3" />
+            <p id="error-anggota3" class="error-tag min-h-[32px]"></p>
+          </div>
+          <div class="nim w-full flex flex-col gap-5">
+            <p>NIM</p>
+            <input id="leader-nim-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="nim1"
+              placeholder="NIM Anggota 1" required />
+            <p id="error-nim1" class="error-tag min-h-[32px]"></p>
+            <input id="anggota-2-nim" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="nim2"
+              placeholder="NIM Anggota 2" required />
+            <p id="error-nim2" class="error-tag min-h-[32px]"></p>
+            <input id="anggota-3-nim" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="nim3"
+              placeholder="NIM Anggota 3" required />
+            <p id="error-nim3" class="error-tag min-h-[32px]"></p>
+          </div>
+        </div>
+
+        <div class="w-full list-anggota flex gap-3 justify-between">
+          <div class="anggota w-full flex flex-col gap-5">
+            <p>ID LINE (Ketua)</p>
+            <input id="line-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="line"
+              placeholder="ID LINE Ketua" required />
+            <p id="error-line" class="error-tag min-h-[32px]"></p>
+          </div>
+          <div class="nim w-full flex flex-col gap-5">
+            <p>No. WA (Ketua)</p>
+            <input id="wa-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="wa"
+              placeholder="No. WA Ketua" required />
+            <p id="error-wa" class="error-tag min-h-[32px]"></p>
+          </div>
+        </div>
+
+        <div class="total w-full flex justify-between">
+          <p><i class="bi bi-cash"></i> Total:</p>
+          <b id="total-price">Rp0,00</b>
+        </div>
+
+        <div class="form-group">
+          <label for="link" class="self-start">Link Folder Drive <i class="bi bi-folder ml-2"></i></label>
+          <input id="url-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="link" placeholder="Link"
+            required />
+          <p id="error-link" class="error-tag min-h-[32px]"></p>
+        </div>
+
+        <div class="payment self-start">
+          <h3>Tata cara pembayaran</h3>
+          <ol>
+            <li>Lakukan registrasi melalui website resmi TECHFEST 2022</li>
+            <li>Kirim biaya pendaftaran melalui rekening dengan menambahkan kode unik.<br><em>BCA: 3160265450 (<i>a.n.
+                  Hanley Yunanda Saputra</i>)</em></li>
+            <li>Pastikan nominal telah menggunakan <em>kode unik (003)</em><br>(Contoh: Rp75.003)</li>
+            <li>Unggah bukti pembayaran pada <em>Google Drive</em> untuk melakukan validasi bahwa Anda telah melakukan
+              pembayaran</li>
+            <li>Panitia akan melakukan validasi dan memberikan konfirmasi bahwa pendaftaran telah berhasil melalui email
+              paling lambat 2x24 jam.</li>
+          </ol>
+        </div>
+
+        <div class="payment self-start">
+          <h3>Dokumen dalam folder
+            <a href="https://s.id/twibbon-techfest2022" class="text-lime-300 underline hover:text-lime-500"
+              target="_blank">
+              Google drive
+            </a>
+          </h3>
+          <ul>
+            <li><em>Scan KTM</em> masing-masing anggota. [ Format nama file: <em>KTM - NamaLengkap</em> ]</li>
+            <li><em>Bukti transfer</em> kepada rekening <em>BCA: 3160265450 (<i>a.n. Hanley Yunanda Saputra</i>)</em>
+              sebesar Rp75.003,00 [ Format nama file: <em>BuktiTransfer - NamaTim</em> ]</li>
+            <li><em>Bukti post twibbon</em> dan poster masing-masing anggota [ Format nama file: <em>BuktiTwibbon -
+                NamaAnggota</em> ]</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="sender" class="self-start">Nama Pembayar</label>
+          <input id="payer-input" class="w-full h-[72px] rounded-2xl px-4 py-4" type="text" name="sender"
+            placeholder="Nama Pembayar" required />
+          <p id="error-sender" class="error-tag min-h-[32px]"></p>
+        </div>
+
+        <div class="cp w-full flex flex-col gap-5">
+          <h3 class="text-2xl">Contact Person</h3>
+          <h4 class="text-xl mx-4 sm:mx-8">UI/UX</h4>
+          <div class="cp-list flex flex-col md:flex-row justify-between mx-4 sm:mx-16">
+            <div class="line flex gap-3 items-center">
+              <i class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
+                md:text-lg xl:text-xl"></i>daviddisinii (Fathi)</a>
+            </div>
+            <div class="line flex gap-3 items-center">
+              <i class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
+                md:text-lg xl:text-xl"></i>timothysigar (Beckham)</a>
+            </div>
+          </div>
+
+          <h4 class="text-xl mx-4 sm:mx-8">Mobile Development</h4>
+          <div class="cp-list flex flex-col md:flex-row justify-between mx-4 sm:mx-16">
+            <div class="line flex gap-3 items-center">
+              <i class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
+                md:text-lg xl:text-xl"></i>alvon_gogeta14 (Alvon)</a>
+            </div>
+            <div class="line flex gap-3 items-center">
+              <i class="bi bi-line text-white text-md hover:text-[#ff84b2] transition pt-2
+                md:text-lg xl:text-xl"></i>mcumyyyyyy (Rumy T.)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="statement-container w-full">
+          <div class="statement flex gap-3 items-center self-start">
+            <input type="checkbox" id="doublecheck" name="doublecheck" value="checked" required />
+            <label for="doublecheck">I have double checked all information I have given.</label>
+          </div>
+          <p id="unchecked-box" class="error-tag min-h-[32px] self-start"></p>
+        </div>
+      </form>
+
+      <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
+        <button class="glass py-4 px-28 rounded-[16px]
+          hover:border-[#ff84b2] hover:text-[#ff84b2] transition cursor-not-allowed" type="submit" id="submit-btn"
+          disabledd>REGISTRATION CLOSED</button>
+      </div>
+
+      <!-- <div class="btn-signup mt-16 mx-auto flex items-center justify-center">
           <button class="glass py-4 px-28 rounded-[16px]
           hover:border-[#ff84b2] hover:text-[#ff84b2] transition" type="submit" id="submit-btn">SUBMIT</button>
         </div> -->
+    </div>
+  </div>
+  <!-- END OF REGISTER -->
+
+  <!-- FOOTER -->
+  <footer class="py-[50px] px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-40 z-50">
+    <div class="content z-50">
+      <div class="content-top">
+        <div class="footer-logo">
+          <a href="/index.html"><img src="/logoAndIcon/techfest_logo_trimmed.png" alt="" /></a>
+        </div>
+        <div class="footer-nav">
+          <a href="../techtalk/techtalk.html" class="underline-anim">TechTalk</a>
+          <a href="/aboutUs/about.html" class="underline-anim">About</a>
+          <a href="/competition/competition.html" class="underline-anim">Competition</a>
+          <a href="#" class="underline-anim">Register</a>
+          <a href="/techexpo/techexpo.html" class="underline-anim">TechExpo</a>
+          <a href="/index.html#faq" class="underline-anim">FAQ</a>
+        </div>
+      </div>
+      <div class="content-bottom">
+        &copy; 2022 TECHFEST | TECHFEST is an event created by HIMTI BINUS
+        UNIVERSITY
       </div>
     </div>
-    <!-- END OF REGISTER -->
 
-    <!-- FOOTER -->
-    <footer class="py-[50px] px-6 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
-      <div class="content">
-        <div class="content-top">
-          <div class="footer-logo">
-            <a href="/index.html"
-              ><img src="/logoAndIcon/techfest_logo_trimmed.png" alt=""
-            /></a>
-          </div>
-          <div class="footer-nav">
-            <a href="../techtalk/techtalk.html" class="underline-anim">TechTalk</a>
-            <a href="/aboutUs/about.html" class="underline-anim">About</a>
-            <a href="/competition/competition.html" class="underline-anim">Competition</a>
-            <a href="#"  class="underline-anim">Register</a>
-            <a href="/techexpo/techexpo.html" class="underline-anim">TechExpo</a>
-            <a href="/index.html#faq" class="underline-anim">FAQ</a>
-          </div>
-        </div>
-        <div class="content-bottom">
-          &copy; 2022 TECHFEST | TECHFEST is an event created by HIMTI BINUS
-          UNIVERSITY
-        </div>
+    <div class="social">
+      <div class="contact">
+        <a href="mailto:techfest.himti@gmail.com" class="contact-platform flex justify-center items-center"><i class="bi bi-envelope text-white text-lg hover:text-[#ff84b2] transition pt-2
+            md:text-xl xl:text-2xl"></i></a>
+        <a href="http://wa.me/6287776294563" class="contact-platform flex justify-center items-center"><i class="bi bi-whatsapp text-white text-lg hover:text-[#ff84b2] transition pt-2
+            md:text-xl xl:text-2xl"></i></a>
+        <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center"
+          target="_blank"><i class="bi bi-instagram text-white text-lg hover:text-[#ff84b2] transition pt-2
+            md:text-xl xl:text-2xl"></i></a>
       </div>
+      <div class="support">
+        <img src="../assets/logoHimti.png" alt="" class="object-contain" />
+        <img src="../assets/logoBinus.png" alt="" class="object-contain" />
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER -->
+  <script src="register.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
 
-      <div class="social">
-        <div class="contact">
-          <a href="mailto:techfest.himti@gmail.com"  class="contact-platform flex justify-center items-center"
-            ><i 
-            class="bi bi-envelope text-white text-lg hover:text-[#ff84b2] transition pt-2
-            md:text-xl xl:text-2xl"></i></a>
-          <a href="http://wa.me/6287776294563" class="contact-platform flex justify-center items-center"
-            ><i 
-            class="bi bi-whatsapp text-white text-lg hover:text-[#ff84b2] transition pt-2
-            md:text-xl xl:text-2xl"></i></a>
-          <a href="https://www.instagram.com/techfest.himti/" class="contact-platform flex justify-center items-center" target="_blank"
-            ><i 
-            class="bi bi-instagram text-white text-lg hover:text-[#ff84b2] transition pt-2
-            md:text-xl xl:text-2xl"></i></a>
-        </div>
-        <div class="support">
-          <img src="../assets/logoHimti.png" alt="" class="object-contain"/>
-          <img src="../assets/logoBinus.png" alt="" class="object-contain" />
-        </div>
-      </div>
-    </footer>
-    <!-- END OF FOOTER -->
-    <script src="register.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  </body>
 </html>
