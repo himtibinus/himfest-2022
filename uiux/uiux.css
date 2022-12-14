@@ -384,9 +384,12 @@ nav button {
 
 /* FOOTER */
 footer {
-  height: auto;
+  height: 400px;
+  color: white;
+  padding: 50px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  grid-template-columns: 1.5fr 1fr;
   background: linear-gradient(45deg,
       #8e5794 -20%,
       #022f46 30%,
@@ -396,36 +399,38 @@ footer {
 }
 
 footer img {
-  width: 60%;
+  width: 200px;
+  /* object-fit: contain; */
 }
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 25px;
 }
 
 .content-top {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  gap: 25px;
 }
 
 .content-bottom {
-  color: white;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .footer-nav {
-  color: white;
-  font-size: 16px;
+  font-size: 22px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   column-gap: 4.5vw;
   row-gap: 20px;
+}
+
+.footer-nav a {
+  position: relative;
+  text-decoration: none;
+  transition: 0.125s all ease-in-out;
 }
 
 .footer-nav a:hover {
@@ -440,20 +445,20 @@ footer img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .contact {
   display: flex;
-  gap: 25px;
+  gap: 50px;
+  align-self: flex-end;
 }
 
 .contact-platform {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6.8vw;
-  height: 6.8vw;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border-bottom: 2px solid #306a73;
   background: linear-gradient(
@@ -472,8 +477,9 @@ footer img {
 
 .support {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  text-align: center;
+  gap: 50px;
+  align-self: flex-end;
 }
 
 .support img {
