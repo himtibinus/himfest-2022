@@ -918,18 +918,6 @@ nav button {
 /* END OF SCHEDULE */
 
 /* OUR SPONSORS */
-/* .img-small {
-  max-width: 60%;
-}
-
-.img-medium {
-  max-width: 80%;
-}
-
-.img-large {
-  max-width: 90%;
-} */
-
 .container-coloring {
   background: linear-gradient(
     152.97deg,
@@ -942,10 +930,6 @@ nav button {
 
   border-radius: 16px;
   border: 1px solid white;
-}
-
-.img-sponsor img {
-  width: 20vw;
 }
 
 @media only screen and (max-width: 1020px) {
