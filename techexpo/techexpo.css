@@ -203,10 +203,6 @@ nav button {
   transition: all 0.125s ease-in-out;
 }
 
-#hero a i {
-  display: none;
-}
-
 @media only screen and (min-width: 480px) {
   .hero-img {
     width: 50vw;
