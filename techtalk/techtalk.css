@@ -609,7 +609,7 @@ nav button {
     transform: rotate(-38deg);
   }
 
-  .about-btn i {
+  /* .about-btn i {
     display: block;
     opacity: 0;
     transition: all 0.125s ease-in-out;
@@ -629,7 +629,7 @@ nav button {
     opacity: 1;
     transition: all 0.125s ease-in-out;
     transform: translateX(16px);
-  }
+  } */
 }
 
 @media only screen and (min-width: 1280px) {
